@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EFT Tapping Therapy in Chester & Cheshire | Talk with Sian</title>
 
+  <!-- Favicon -->
   <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
 
   <!-- SEO Meta Tags -->
   <meta
     name="description"
-    content="Discover Emotional Freedom Technique (EFT Tapping) at Talk with Sian. Our remote sessions help women across Chester and Cheshire overcome anxiety, trauma, and stress."
+    content="Discover Emotional Freedom Technique (EFT Tapping) at Talk with Sian. Our sessions help women across Chester and Cheshire overcome anxiety, trauma, and stress."
   />
   <meta
     name="keywords"
@@ -24,51 +25,322 @@
   <meta name="ICBM" content="53.1905, -2.8919" />
 
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="EFT Tapping Therapy in Chester & Cheshire | Talk with Sian"
-  />
-  <meta
-    property="og:description"
-    content="Manage anxiety, stress, and trauma with EFT Tapping. Talk with Sian offers remote Emotional Freedom Technique sessions for women in Chester & Cheshire."
-  />
+  <meta property="og:title" content="EFT Tapping Therapy in Chester & Cheshire | Talk with Sian" />
+  <meta property="og:description" content="Manage anxiety, stress, and trauma with EFT Tapping. Talk with Sian offers Emotional Freedom Technique sessions for women in Chester & Cheshire." />
   <meta property="og:url" content="https://www.talkwithsian.com/eft-therapy" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/logo-talk-with-sian.jpg" />
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="EFT Tapping Therapy in Chester & Cheshire | Talk with Sian"
-  />
-  <meta
-    name="twitter:description"
-    content="Release negative emotions and find relief from anxiety or trauma through EFT Tapping with Talk with Sian. Remote sessions available."
-  />
+  <meta name="twitter:title" content="EFT Tapping Therapy in Chester & Cheshire | Talk with Sian" />
+  <meta name="twitter:description" content="Release negative emotions and find relief from anxiety or trauma through EFT Tapping with Talk with Sian. Remote sessions available." />
   <meta name="twitter:image" content="images/logo-talk-with-sian.jpg" />
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://talkwithsian.com/eft-therapy.html" />
 
-  <!-- Bootstrap & CSS -->
+  <!-- Bootstrap CSS (for grid/layout) -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <link href="css/custom.css" rel="stylesheet" />
-  <link href="css/service.css" rel="stylesheet" />
-  <!-- Optional: page-specific CSS
-  <link href="css/eft-therapy.css" rel="stylesheet" /> -->
-</head>
+  
 
+  <!-- ==================== Custom Combined CSS ==================== -->
+  <style>
+    /* ========================================
+       Reset/Global
+    ========================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h1, h2, h3, h4, h5 {
+      font-family: "Playfair Display", serif;
+      margin-bottom: 1rem;
+    }
+
+    /* Purple highlight color */
+    .text-purple {
+      color: #7e57c2 !important;
+    }
+
+    /* ========================================
+       Navbar
+    ========================================= */
+    .navbar {
+      background: linear-gradient(45deg, #96c, #856798);
+      box-shadow: 0 4px 6px rgba(0,0,0,.1);
+      border-bottom: 2px solid #c9a0dc;
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      border-radius: 50%;
+      height: 90px;
+      border: 2px solid #c9a0dc;
+    }
+    .navbar-brand-name {
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.25rem;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      transition: color .3s ease-in-out;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #c9a0dc;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler-icon {
+      background-image:
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* ========================================
+       Cookie Banner
+    ========================================= */
+    .cookie-consent-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: indigo;
+      color: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+      z-index: 1000;
+      display: none;
+    }
+    .cookie-consent-banner p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .cookie-consent-banner a {
+      color: #c9a0dc;
+      text-decoration: underline;
+    }
+    .cookie-consent-banner a:hover {
+      color: #fff;
+    }
+
+    /* ========================================
+       Buttons & Gradients
+    ========================================= */
+    .gradient-button {
+      background: linear-gradient(45deg, #9370DB, #856798);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+    .gradient-button:hover {
+      background: linear-gradient(45deg, #856798, #4b0082);
+    }
+
+    .expand-btn {
+      background: linear-gradient(45deg, #9370DB, #856798);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 2rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .expand-btn:hover {
+      background: linear-gradient(45deg, #856798, #4b0082);
+    }
+
+    /* ========================================
+       Hero Section
+    ========================================= */
+    .hero-section {
+      background-image: url("https://via.placeholder.com/1600x800/9370DB/FFFFFF?text=EFT+Therapy+Hero");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 3rem;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      margin-bottom: 1.5rem;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
+    }
+
+    /* ========================================
+       Content Container
+    ========================================= */
+    .content-container {
+      min-height: 100vh;
+      padding-top: 100px; /* extra space for fixed navbar */
+      background-color: #fff;
+    }
+
+    /* ========================================
+       Section Headings
+    ========================================= */
+    .section-title {
+      text-align: center;
+      color: #7e57c2;
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #7e57c2;
+      margin: 1rem auto 0;
+    }
+
+    /* ========================================
+       Image Styling
+    ========================================= */
+    .rounded-shadow {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    /* ========================================
+       Testimonials
+    ========================================= */
+    .testimonial-section {
+      background-color: #EDE7F6;
+      padding: 4rem 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .testimonial {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-style: italic;
+      color: #333;
+    }
+    .testimonial h5 {
+      margin-top: 1rem;
+      color: #7e57c2;
+      font-weight: bold;
+    }
+    .review-card {
+      display: none;
+    }
+    .review-card.show {
+      display: block;
+    }
+
+    /* ========================================
+       About Navigation
+    ========================================= */
+    .about-navigation {
+      background-color: #f3f4f6;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .about-navigation .navigation-title {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #7e57c2;
+      margin-bottom: 1.5rem;
+    }
+    .about-navigation .navigation-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .about-navigation .navigation-link {
+      background-color: #7e57c2;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .about-navigation .navigation-link:hover {
+      background-color: #4b0082;
+      transform: translateY(-2px);
+    }
+
+    /* ========================================
+       Footer
+    ========================================= */
+    .footer {
+      background: linear-gradient(45deg, #96c, #856798);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 2px solid #c9a0dc;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- Navbar with Dropdown -->
+  <!-- ======== NAVBAR ======== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center py-3" href="index.html">
-        <img
-          src="images/logo-talk-with-sian.jpg"
-          alt="Talk with Sian"
-          class="rounded-circle me-2"
-        />
+        <img src="images/logo-talk-with-sian.jpg" alt="Talk with Sian" class="rounded-circle me-2" />
         <span class="navbar-brand-name ms-2">Talk with Sian</span>
       </a>
       <button
@@ -78,8 +350,7 @@
         data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -91,7 +362,6 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
-
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
             <a
@@ -100,8 +370,7 @@
               id="servicesDropdown"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -112,7 +381,6 @@
               <li><a class="dropdown-item" href="cbt-therapy.html">CBT Therapy</a></li>
             </ul>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
@@ -121,83 +389,185 @@
     </div>
   </nav>
 
-  <!-- Cookie Banner -->
+  <!-- ======== COOKIE BANNER ======== -->
   <div id="cookieConsent" class="cookie-consent-banner">
     <div class="container d-flex align-items-center justify-content-between">
       <p class="mb-0">
-        We use cookies to improve your experience on our site. By continuing to
-        use our site, you accept our use of cookies.
-        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal"
-          >Learn more</a
-        >.
+        We use cookies to improve your experience on our site. By continuing to use our site, you accept our use of cookies.
+        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Learn more</a>.
       </p>
-      <button id="acceptCookies" class="btn btn-primary">Accept</button>
+      <button id="acceptCookies" class="gradient-button">Accept</button>
     </div>
   </div>
 
-  <!-- Main Content -->
-  <div class="container content-container flex-grow-1 d-flex-column align-items-center justify-content-center pt-5 mt-5">
+  <!-- ======== MAIN CONTENT ======== -->
+  <div class="container content-container flex-grow-1 pt-5 mt-5">
     <!-- Hero Section -->
-    <div class="services-hero-section py-5 px-3 my-5">
+    <div class="hero-section">
       <h1>EFT Tapping Therapy</h1>
-      <p class="lead">
-        Free yourself from emotional burdens with the power of Emotional Freedom
-        Technique (EFT).
-      </p>
+      <p>Transform anxiety, stress, or emotional blocks with a gentle, hands-on approach that soothes both mind and body.</p>
+      <a class="gradient-button mt-4" href="contact.html">Book a Session</a>
     </div>
 
-    <!-- Content Row -->
-    <div class="row mb-5">
+    <!-- WHAT IS EFT (short paragraphs with more images) -->
+    <div class="row mb-5 align-items-center">
+      <h2 class="section-title">What Is EFT Tapping?</h2>
       <div class="col-md-6">
         <img
-          src="images/eft-session.jpg"
-          alt="EFT Tapping Session"
-          class="img-fluid rounded"
+          src="https://via.placeholder.com/800x500/BBCCF6/333333?text=EFT+Tapping+Overview"
+          alt="EFT Tapping overview"
+          class="img-fluid rounded-shadow"
+        />
+        <img
+          src="https://via.placeholder.com/800x500/CBBBD9/333333?text=Mind-Body+Connection"
+          alt="Mind-body connection"
+          class="img-fluid rounded-shadow"
         />
       </div>
-      <div class="col-md-6 d-flex flex-column">
-        <h2>What is Emotional Freedom Technique (EFT)?</h2>
+      <div class="col-md-6">
         <p>
-          EFT Tapping blends cognitive therapy with acupressure points to alleviate
-          anxiety, trauma, and stress. By focusing on a challenging thought or
-          emotion while tapping on specific meridian points, you can rapidly
-          reduce emotional intensity and regain inner calm.
+          Emotional Freedom Technique (EFT) is a method that blends talk therapy
+          principles with acupressure. While focusing on a challenging thought or
+          emotion, you gently tap on specific points—often on your face and upper
+          body. This sends calming signals to the brain and can quickly reduce
+          emotional distress.
         </p>
-        <h3>Who Benefits from EFT?</h3>
-        <ul>
-          <li>Anyone dealing with chronic anxiety or stress</li>
-          <li>Individuals coping with phobias or PTSD</li>
-          <li>Women seeking an effective, holistic approach to mental wellness</li>
-        </ul>
-        <a href="contact.html" class="btn btn-outline-primary mt-3"
-          >Start Your EFT Journey</a
-        >
+        <p>
+          By working with both mind and body, EFT helps you release tension and
+          restore balance to your energy system. Many women in Chester & Cheshire
+          have reported feeling immediate relief, noticing shifts in anxiety or
+          emotional overwhelm in just a few sessions.
+        </p>
       </div>
     </div>
 
-    <!-- Additional Section -->
+    <!-- HOW EFT HELPS + short text blocks + images -->
     <div class="row mb-5">
-      <div class="col-12">
-        <h2>Why Choose Talk with Sian for EFT?</h2>
-        <p>
-          As a trauma-informed practitioner, I guide you through each tapping
-          sequence with empathy and expertise. Whether you’re overcoming emotional
-          trauma, reducing stress, or looking to boost self-confidence, EFT offers
-          a versatile, client-led approach to healing. Our remote sessions allow
-          you to practice tapping from the comfort of home, eliminating
-          geographical barriers.
+      <h2 class="section-title">How EFT Helps</h2>
+      <div class="col-md-4 mb-4">
+        <img
+          src="https://via.placeholder.com/400x250/9370DB/ffffff?text=Stress+Relief"
+          alt="Stress relief"
+          class="img-fluid rounded-shadow"
+        />
+        <p class="mt-2">
+          EFT has been shown to ease <strong>stress and anxiety</strong> by tapping
+          away heightened responses and allowing your body to re-learn calm
+          patterns.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img
+          src="https://via.placeholder.com/400x250/BBCCF6/333333?text=Confidence+Boost"
+          alt="Confidence boost"
+          class="img-fluid rounded-shadow"
+        />
+        <p class="mt-2">
+          Overcome self-doubt or past traumas to experience <strong>greater
+          confidence</strong> and self-empowerment in everyday life.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img
+          src="https://via.placeholder.com/400x250/CBBBD9/333333?text=Emotional+Balance"
+          alt="Emotional balance"
+          class="img-fluid rounded-shadow"
+        />
+        <p class="mt-2">
+          Find <strong>emotional balance</strong> and clarity by releasing blocked
+          feelings that may contribute to stress, sleeplessness, or negative
+          self-talk.
         </p>
       </div>
     </div>
 
-    <!-- CTA Buttons -->
-    <div class="text-center">
-      <a href="services.html" class="btn btn-secondary me-2">All Services</a>
-      <a href="contact.html" class="btn btn-primary">Book Your Session</a>
+    <!-- SESSION EXPERIENCE section -->
+    <div class="row mb-5 align-items-center">
+      <h2 class="section-title">Your EFT Session</h2>
+      <div class="col-md-6">
+        <p>
+          Each session is customized for you. We begin by identifying the core
+          issue or emotion you’d like to address, then guide you through tapping
+          sequences. There’s no rigid formula—your personal comfort and progress
+          shape the experience.  
+        </p>
+        <p>
+          A typical session lasts about 50 minutes. Whether you choose an in-person
+          appointment in Chester or a virtual session, you’ll receive the same
+          level of empathic, knowledgeable support.
+        </p>
+        <a class="gradient-button mt-3" href="contact.html">Schedule a Session</a>
+      </div>
+      <div class="col-md-6">
+        <img
+          src="https://via.placeholder.com/800x500/DED0F6/333333?text=In-Person+%7C+Remote+EFT"
+          alt="EFT Session"
+          class="img-fluid rounded-shadow"
+        />
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonial-section">
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="testimonial">
+            <p>
+              "I felt immediate calm during our first session. Tapping with Sian
+              allowed me to face old anxieties I'd been pushing away for years."
+            </p>
+            <h5>— Lucy, Chester</h5>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="testimonial">
+            <p>
+              "I never thought something so simple could have such a big impact.
+              EFT gave me the tools to manage my stress at home whenever I need it."
+            </p>
+            <h5>— Emma, Cheshire</h5>
+          </div>
+        </div>
+
+        <!-- Additional Hidden Reviews -->
+        <div class="col-md-5 review-card">
+          <div class="testimonial">
+            <p>
+              "Remote sessions were amazing—no travel needed, yet I felt deeply
+              supported and saw real changes in how I handle my triggers."
+            </p>
+            <h5>— Rachel K.</h5>
+          </div>
+        </div>
+        <div class="col-md-5 review-card">
+          <div class="testimonial">
+            <p>
+              "Tapping was new to me, but it’s been the missing piece in my
+              healing. I can't believe the difference in my anxiety levels."
+            </p>
+            <h5>— Sarah J.</h5>
+          </div>
+        </div>
+      </div>
+      <button id="expandBtn" class="expand-btn" onclick="toggleReviews()">Show More Reviews</button>
+    </div>
+
+    <!-- ABOUT NAVIGATION for next steps -->
+    <div class="about-navigation">
+      <h2 class="navigation-title">Explore Other Therapy Options</h2>
+      <div class="navigation-links">
+        <a href="trauma-therapy.html" class="navigation-link">Trauma Therapy</a>
+        <a href="cbt-therapy.html" class="navigation-link">CBT Therapy</a>
+        <a href="services.html" class="navigation-link">All Services</a>
+        <a href="about.html" class="navigation-link">About Sian</a>
+        <a href="contact.html" class="navigation-link">Contact Us</a>
+      </div>
     </div>
   </div>
+  <!-- END CONTENT -->
 
-  <!-- Footer -->
+  <!-- ======== FOOTER ======== -->
   <footer class="footer mt-auto">
     <div class="container">
       <div class="row">
@@ -210,12 +580,8 @@
         </div>
         <div class="col-md-4 mb-4">
           <h5>Legal</h5>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal"
-            >Cookie Policy</a
-          >
-          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal"
-            >Privacy Policy</a
-          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Cookie Policy</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal">Privacy Policy</a>
         </div>
         <div class="col-md-4 mb-4">
           <h5>Connect with Us</h5>
@@ -230,17 +596,19 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- ======== SCRIPTS ======== -->
+  <!-- Bootstrap JS Bundle (for collapse, modals, etc.) -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
 
-  <!-- Cookie Consent -->
+  <!-- Cookie Consent & Toggle Reviews -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const consentBanner = document.getElementById("cookieConsent");
       const acceptButton = document.getElementById("acceptCookies");
 
+      // Check localStorage to see if user has accepted cookies
       if (localStorage.getItem("cookieConsent") !== "true") {
         consentBanner.style.display = "block";
       } else {
@@ -252,6 +620,20 @@
         consentBanner.style.display = "none";
       });
     });
+
+    // Toggle Additional Reviews
+    function toggleReviews() {
+      const reviews = document.querySelectorAll('.review-card');
+      reviews.forEach((review) => {
+        review.classList.toggle('show');
+      });
+
+      const expandBtn = document.getElementById('expandBtn');
+      expandBtn.textContent =
+        expandBtn.textContent === 'Show More Reviews'
+          ? 'Show Less Reviews'
+          : 'Show More Reviews';
+    }
   </script>
 </body>
 </html>

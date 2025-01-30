@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trauma Therapy in Chester & Cheshire | Talk with Sian</title>
-
-  <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
 
   <!-- SEO Meta Tags -->
   <meta
     name="description"
-    content="Heal from past experiences with specialised Trauma Therapy. Talk with Sian supports women in Chester, Cheshire, and beyond through remote counselling."
+    content="Heal from past experiences with specialised Trauma Therapy. Talk with Sian offers remote counselling for PTSD, domestic abuse, and more, serving women in Chester, Cheshire, and beyond."
   />
   <meta
     name="keywords"
@@ -24,72 +22,250 @@
   <meta name="ICBM" content="53.1905, -2.8919" />
 
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Trauma Therapy in Chester & Cheshire | Talk with Sian"
-  />
-  <meta
-    property="og:description"
-    content="Overcome the impact of domestic abuse, PTSD, or childhood trauma. Experience remote trauma therapy sessions with Talk with Sian."
-  />
+  <meta property="og:title" content="Trauma Therapy in Chester & Cheshire | Talk with Sian" />
+  <meta property="og:description" content="Overcome the impact of domestic abuse, PTSD, or childhood trauma. Experience remote therapy sessions with Talk with Sian in Chester & Cheshire." />
   <meta property="og:url" content="https://www.talkwithsian.com/trauma-therapy" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/logo-talk-with-sian.jpg" />
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Trauma Therapy in Chester & Cheshire | Talk with Sian"
-  />
-  <meta
-    name="twitter:description"
-    content="Find hope and healing from trauma, PTSD, or abuse. Talk with Sian offers remote therapy sessions for women seeking a safe, understanding environment."
-  />
+  <meta name="twitter:title" content="Trauma Therapy in Chester & Cheshire | Talk with Sian" />
+  <meta name="twitter:description" content="Find hope and healing from trauma, PTSD, or abuse. Talk with Sian offers remote therapy sessions for women in Chester, Cheshire, and beyond." />
   <meta name="twitter:image" content="images/logo-talk-with-sian.jpg" />
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://talkwithsian.com/trauma-therapy.html" />
 
-  <!-- Bootstrap & CSS -->
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
+
+  <!-- Bootstrap CSS (for layout) -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <link href="css/custom.css" rel="stylesheet" />
-  <link href="css/service.css" rel="stylesheet" />
-</head>
 
+  <!-- ==================== Inline Custom CSS ==================== -->
+  <style>
+    /* =============== GLOBAL RESET & BODY =============== */
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1, h2, h3, h4, h5 {
+      font-family: "Playfair Display", serif;
+      margin-bottom: 1rem;
+    }
+
+    /* Purple highlight or accent color */
+    .text-purple {
+      color: #7e57c2 !important;
+    }
+
+    /* =============== NAVBAR =============== */
+    .navbar {
+      background: linear-gradient(45deg, #96c, #856798);
+      border-bottom: 2px solid #c9a0dc;
+      box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    }
+    .navbar-brand img {
+      border-radius: 50%;
+      border: 2px solid #c9a0dc;
+      height: 70px;
+    }
+    .navbar-brand-name {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.25rem;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #c9a0dc;
+    }
+
+    /* =============== COOKIE BANNER =============== */
+    .cookie-consent-banner {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: indigo;
+      color: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+      z-index: 1000;
+    }
+    .cookie-consent-banner a {
+      color: #c9a0dc;
+      text-decoration: underline;
+    }
+    .btn-cookie-consent {
+      background: linear-gradient(45deg, #9370DB, #856798);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* =============== CONTENT WRAPPER =============== */
+    .content-container {
+      min-height: 100vh;
+      padding-top: 100px; /* space for fixed navbar */
+    }
+
+    /* =============== HERO SECTION =============== */
+    .hero-section {
+      background-image: url("https://via.placeholder.com/1600x700/9370DB/FFFFFF?text=Trauma+Therapy+Hero");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 3rem;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      margin-bottom: 1.5rem;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
+    }
+
+    /* =============== PURPLE TICK LIST =============== */
+    .purple-tick-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .purple-tick-list li {
+      position: relative;
+      margin-bottom: 0.75rem;
+      padding-left: 30px;
+    }
+    .purple-tick-list li::before {
+      content: "✓";
+      color: #7e57c2;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* =============== CTA BUTTONS =============== */
+    .btn-sian {
+      background: linear-gradient(45deg, #9370DB, #856798);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 0.75rem 1.5rem;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .btn-sian:hover {
+      background: linear-gradient(45deg, #856798, #4b0082);
+      color: #fff;
+    }
+    .btn-sian-outline {
+      background: transparent;
+      border: 2px solid #856798;
+      color: #856798;
+      border-radius: 30px;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .btn-sian-outline:hover {
+      background: #856798;
+      color: #fff;
+    }
+
+    /* =============== FOOTER =============== */
+    .footer {
+      background: linear-gradient(45deg, #96c, #856798);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 2px solid #c9a0dc;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer .bold {
+      font-weight: bold;
+    }
+
+    /* =============== RESPONSIVE UTILITY =============== */
+    .rounded-shadow {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- Navbar with Dropdown -->
+  <!-- ======== NAVBAR ======== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center py-3" href="index.html">
+        <!-- Replace with your real logo if available -->
         <img
-          src="images/logo-talk-with-sian.jpg"
+          src="https://via.placeholder.com/70/9966cc/ffffff?text=Sian"
           alt="Talk with Sian"
           class="rounded-circle me-2"
         />
         <span class="navbar-brand-name ms-2">Talk with Sian</span>
       </a>
       <button
-        class="navbar-toggler ms-auto mb-2 py-3"
+        class="navbar-toggler ms-auto"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav py-4">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
-
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
             <a
@@ -98,19 +274,17 @@
               id="servicesDropdown"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
               <li><a class="dropdown-item" href="services.html">All Services</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="eft-therapy.html">EFT Tapping</a></li>
               <li><a class="dropdown-item" href="trauma-therapy.html">Trauma Therapy</a></li>
               <li><a class="dropdown-item" href="cbt-therapy.html">CBT Therapy</a></li>
             </ul>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
@@ -119,135 +293,182 @@
     </div>
   </nav>
 
-  <!-- Cookie Banner -->
+  <!-- ======== COOKIE BANNER ======== -->
   <div id="cookieConsent" class="cookie-consent-banner">
     <div class="container d-flex align-items-center justify-content-between">
       <p class="mb-0">
-        We use cookies to improve your experience on our site. By continuing to
-        use our site, you accept our use of cookies.
-        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal"
-          >Learn more</a
-        >.
+        We use cookies to improve your experience on our site. By continuing to use our site, you accept our use of cookies.
+        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Learn more</a>.
       </p>
-      <button id="acceptCookies" class="btn btn-primary">Accept</button>
+      <button id="acceptCookies" class="btn-cookie-consent">Accept</button>
     </div>
   </div>
 
-  <!-- Main Content -->
-  <div class="container content-container flex-grow-1 d-flex-column align-items-center justify-content-center pt-5 mt-5">
-    <!-- Hero Section -->
-    <div class="services-hero-section py-5 px-3 my-5">
+  <!-- ======== MAIN CONTENT ======== -->
+  <div class="container content-container flex-grow-1">
+    <!-- HERO SECTION -->
+    <div class="hero-section">
       <h1>Trauma Therapy</h1>
-      <p class="lead">
-        Overcome the lingering effects of traumatic experiences and rediscover
-        emotional well-being.
-      </p>
+      <p>A supportive, compassionate approach to help you heal from past experiences and rediscover emotional balance.</p>
     </div>
 
-    <div class="row mb-5">
+    <!-- WHY TRAUMA THERAPY -->
+    <div class="row align-items-center g-5 mb-5">
       <div class="col-md-6">
-        <img
-          src="images/trauma-session.jpg"
-          alt="Trauma Therapy in Chester"
-          class="img-fluid rounded"
-        />
-      </div>
-      <div class="col-md-6 d-flex flex-column">
         <h2>Why Trauma Therapy?</h2>
         <p>
-          Traumatic events can leave lasting emotional scars, manifesting as
-          flashbacks, anxiety, depression, or relationship struggles. Our
-          trauma-focused sessions provide a safe, empathetic space to process
-          these experiences, reduce triggers, and reclaim your sense of self.
+          Traumatic events can leave deep emotional imprints, affecting your sense of
+          safety, self-worth, and relationships. Whether it’s domestic abuse, an accident,
+          or a painful childhood, therapy gives you tools and insights to process
+          these memories in a structured, empathetic way.
         </p>
-        <h3>Specialised Areas of Support</h3>
-        <ul>
-          <li>Domestic abuse counselling</li>
-          <li>PTSD and complex trauma</li>
-          <li>Childhood or generational trauma</li>
+        <p>
+          My goal is to help you reclaim your sense of security and identity,
+          offering <strong>renewed resilience</strong> and hope.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img
+          src="https://via.placeholder.com/650x450/ddd/000?text=Why+Trauma+Therapy"
+          alt="Why Trauma Therapy"
+          class="img-fluid rounded-shadow"
+        />
+      </div>
+    </div>
+
+    <!-- COMMON CHALLENGES: background highlight row -->
+    <div class="row bg-light g-5 p-4 p-md-5 rounded-3 mb-5">
+      <div class="col-lg-10 offset-lg-1">
+        <h2 class="text-center mb-4">Common Challenges Survivors Face</h2>
+        <p>
+          Trauma can manifest differently in each person, but many survivors share
+          difficult experiences like:
+        </p>
+        <ul class="purple-tick-list">
+          <li>Flashbacks or distressing dreams</li>
+          <li>Avoiding people or places that trigger memories</li>
+          <li>Hypervigilance and difficulties trusting others</li>
+          <li>Emotional numbness, shame, or guilt</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline-primary mt-3"
-          >Begin Your Healing</a
-        >
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2>Our Approach</h2>
         <p>
-          At Talk with Sian, trauma therapy is shaped by person-centred methods
-          and evidence-based tools like EFT Tapping or CBT strategies (if
-          appropriate). Each session is tailored to your comfort level,
-          respecting your boundaries and pace of healing. We collaborate to build
-          coping mechanisms, enhance self-compassion, and gradually desensitise
-          traumatic triggers.
-        </p>
-        <p>
-          Remote sessions mean you can access professional therapy without leaving
-          the security of your home—vital when dealing with intense anxiety or
-          trust issues.
+          Recognising these patterns is the first step toward releasing their hold on
+          your everyday life.
         </p>
       </div>
     </div>
 
-    <!-- CTA Buttons -->
-    <div class="text-center mb-5">
-      <a href="services.html" class="btn btn-secondary me-2">All Services</a>
-      <a href="contact.html" class="btn btn-primary">Request a Session</a>
+    <!-- OUR APPROACH: reversed on large screens -->
+    <div class="row align-items-center mb-5 g-5">
+      <div class="col-lg-6 order-lg-2">
+        <img
+          src="https://via.placeholder.com/600x400/856798/ffffff?text=Our+Trauma+Approach"
+          alt="Therapeutic Approach"
+          class="img-fluid rounded-shadow"
+        />
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <h2>Our Therapeutic Approach</h2>
+        <p>
+          I integrate several **evidence-based** modalities tailored to your unique needs:
+        </p>
+        <p><strong>Person-Centred Counselling:</strong> Provides a safe, non-judgemental space at your pace.</p>
+        <p><strong>EFT Tapping:</strong> Eases emotional distress by gently tapping acupressure points while focusing on traumatic memories.</p>
+        <p><strong>CBT Strategies:</strong> Identifies and reframes unhelpful thoughts that might reinforce fear or anxiety.</p>
+        <p>
+          By combining these tools, you’ll develop healthier coping skills and gradually
+          learn to process trauma in a more manageable way.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- Footer -->
+    <!-- REMOTE SESSIONS BENEFITS -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-md-6">
+        <h2>Why Remote Therapy?</h2>
+        <p>
+          Remote sessions can be especially helpful if you’re rebuilding trust
+          after domestic abuse, or if anxiety makes leaving home challenging.
+          Connecting via secure video platform lets you attend sessions from a
+          familiar environment—minimising stress and logistical barriers.
+        </p>
+        <p>
+          Whether you’re in Chester, elsewhere in Cheshire, or beyond, distance no
+          longer stands between you and the support you deserve.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img
+          src="https://via.placeholder.com/550x350/7e57c2/ffffff?text=Remote+Therapy"
+          alt="Remote Therapy"
+          class="img-fluid rounded-shadow"
+        />
+      </div>
+    </div>
+
+    <!-- CTA SECTION: BOOK SESSION -->
+    <div class="row bg-gradient p-5 rounded-3  mb-5">
+      <div class="col-md-10 offset-md-1 text-center">
+        <h2 class="mb-3">Ready to Begin Your Healing Journey?</h2>
+        <p class="mb-4">
+          Trauma therapy can help you reclaim a sense of safety, identity,
+          and future. If you’re prepared to take that step, I’m here to walk
+          alongside you with compassion, insight, and unwavering support.
+        </p>
+        <a href="services.html" class="btn-sian-outline me-3">Explore All Services</a>
+        <a href="contact.html" class="btn-sian">Request a Session</a>
+      </div>
+    </div>
+  </div><!-- END .content-container -->
+
+  <!-- ======== FOOTER ======== -->
   <footer class="footer mt-auto">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
+      <div class="row py-3">
+        <div class="col-md-4">
           <h5>Quick Links</h5>
           <a href="index.html">Home</a> |
           <a href="about.html">About</a> |
           <a href="services.html">Services</a> |
           <a href="contact.html">Contact</a>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4">
           <h5>Legal</h5>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal"
-            >Cookie Policy</a
-          >
-          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal"
-            >Privacy Policy</a
-          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Cookie Policy</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal">Privacy Policy</a>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4">
           <h5>Connect with Us</h5>
           <p>Mobile: +44 7754 141453</p>
           <p>Email: <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a></p>
         </div>
       </div>
-      <div class="text-center p-3">
+      <div class="text-center p-2">
         © 2024 Talk with Sian. Designed by
         <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- ======== SCRIPTS ======== -->
+  <!-- Bootstrap JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
 
-  <!-- Cookie Consent -->
+  <!-- Cookie Consent Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const consentBanner = document.getElementById("cookieConsent");
       const acceptButton = document.getElementById("acceptCookies");
 
+      // Display banner if localStorage is not set
       if (localStorage.getItem("cookieConsent") !== "true") {
         consentBanner.style.display = "block";
       } else {
         consentBanner.style.display = "none";
       }
 
+      // On 'Accept', set localStorage so banner won't show again
       acceptButton.addEventListener("click", function () {
         localStorage.setItem("cookieConsent", "true");
         consentBanner.style.display = "none";

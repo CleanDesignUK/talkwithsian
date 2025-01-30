@@ -139,3 +139,36 @@
     }
   }
   
+
+
+  /* Example in service.css or custom.css */
+.btn-sian {
+    background-color: #7e57c2;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .btn-sian:hover {
+    background-color: #693ea0;
+  }
+  
+  .btn-sian-outline {
+    background-color: transparent;
+    border: 2px solid #7e57c2;
+    color: #7e57c2;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  .btn-sian-outline:hover {
+    background-color: #7e57c2;
+    color: #fff;
+  }
+  

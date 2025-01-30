@@ -1,0 +1,136 @@
+/* --------------------------------------------------
+   trauma-therapy.css
+   Minimal overrides + brand styling for your 
+   trauma therapy page. 
+-------------------------------------------------- */
+
+/* NAVBAR (reusing bootstrap classes, only minimal custom) */
+.navbar {
+    background: linear-gradient(45deg, #96c, #856798);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #c9a0dc;
+  }
+  .navbar-brand-name {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  
+  /* Cookie Banner */
+  .cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: indigo;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .cookie-consent-banner p {
+    margin: 0;
+  }
+  .cookie-consent-banner a {
+    color: #c9a0dc;
+    text-decoration: underline;
+  }
+  .cookie-consent-banner button.btn-cookie-consent {
+    background-color: #7e57c2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .cookie-consent-banner button.btn-cookie-consent:hover {
+    background-color: #856798;
+  }
+  
+  /* Content Container Padding (for fixed navbar offset) */
+  .content-container {
+    min-height: 100vh;
+    padding-top: 90px; 
+    background-color: #fff;
+  }
+  
+  /* HERO SECTION */
+  .hero-section {
+    background-color: transparent; /* let spacing come from row classes */
+  }
+  .hero-section h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .hero-section .lead {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Purple-tick bullet lists */
+  .purple-tick-list {
+    list-style-type: none;
+    padding-left: 1.2rem;
+  }
+  .purple-tick-list li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+  .purple-tick-list li::before {
+    content: "✔";
+    color: #7e57c2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* CTA Buttons (non-Bootstrap) */
+  .btn-sian,
+  .btn-sian-outline {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  .btn-sian {
+    background-color: #7e57c2;
+    color: #fff;
+    border: none;
+  }
+  .btn-sian:hover {
+    background-color: #693ea0;
+  }
+  .btn-sian-outline {
+    background-color: transparent;
+    border: 2px solid #7e57c2;
+    color: #7e57c2;
+  }
+  .btn-sian-outline:hover {
+    background-color: #7e57c2;
+    color: #fff;
+  }
+  
+  /* FOOTER */
+  .footer {
+    background: linear-gradient(45deg, #96c, #856798);
+    color: #fff;
+    border-top: 2px solid #c9a0dc;
+  }
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  

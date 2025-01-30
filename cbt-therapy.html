@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CBT Therapy Near Me | Talk with Sian</title>
 
-  <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
-
-  <!-- SEO Meta Tags -->
+  <!-- Primary SEO Meta Tags -->
   <meta
     name="description"
     content="Looking for CBT near you? Talk with Sian provides Cognitive Behavioural Therapy for anxiety, depression, and stress. Remote sessions across Chester & Cheshire."
@@ -24,68 +22,242 @@
   <meta name="ICBM" content="53.1905, -2.8919" />
 
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="CBT Therapy Near Me | Talk with Sian"
-  />
-  <meta
-    property="og:description"
-    content="Transform negative thought patterns and behaviour with CBT. Talk with Sian offers remote Cognitive Behavioural Therapy in Chester & Cheshire."
-  />
+  <meta property="og:title" content="CBT Therapy Near Me | Talk with Sian" />
+  <meta property="og:description" content="Transform negative thought patterns and behaviours with CBT. Talk with Sian offers remote Cognitive Behavioural Therapy in Chester & Cheshire." />
   <meta property="og:url" content="https://www.talkwithsian.com/cbt-therapy" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/logo-talk-with-sian.jpg" />
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="CBT Therapy Near Me | Talk with Sian"
-  />
-  <meta
-    name="twitter:description"
-    content="Looking for CBT near you? Talk with Sian provides remote sessions for depression, anxiety, and stress across Chester & Cheshire."
-  />
+  <meta name="twitter:title" content="CBT Therapy Near Me | Talk with Sian" />
+  <meta name="twitter:description" content="Looking for CBT near you? Talk with Sian provides remote sessions for depression, anxiety, and stress across Chester & Cheshire." />
   <meta name="twitter:image" content="images/logo-talk-with-sian.jpg" />
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://talkwithsian.com/cbt-therapy.html" />
 
-  <!-- Bootstrap & CSS -->
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
+
+  <!-- Bootstrap CSS (for layout) -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
   <link href="css/custom.css" rel="stylesheet" />
-  <link href="css/service.css" rel="stylesheet" />
-</head>
+ 
+  <!-- ==================== Inline Custom CSS ==================== -->
+  <style>
+    /* ========== Global Reset & Body ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h1, h2, h3, h4, h5 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
 
+    /* Purple highlight color or accent */
+    .text-purple {
+      color: #7e57c2 !important;
+    }
+
+    /* ========== Navbar ========== */
+    .navbar {
+      background: linear-gradient(45deg, #96c, #856798);
+      border-bottom: 2px solid #c9a0dc;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .navbar-brand img {
+      border-radius: 50%;
+      border: 2px solid #c9a0dc;
+      height: 70px;
+    }
+    .navbar-brand-name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #c9a0dc;
+    }
+
+    /* ========== Cookie Banner ========== */
+    .cookie-consent-banner {
+      display: none; /* hidden by default, displayed if user hasn't accepted */
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: indigo;
+      color: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+      z-index: 1000;
+    }
+    .cookie-consent-banner a {
+      color: #c9a0dc;
+      text-decoration: underline;
+    }
+    .btn-cookie-consent {
+      background: linear-gradient(45deg, #9370DB, #856798);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* ========== Content Container ========== */
+    .content-container {
+      min-height: 100vh;
+      padding-top: 100px; /* spacing for fixed navbar if needed */
+    }
+
+    /* ========== Hero Section ========== */
+    .hero-section {
+      background-image: url("https://via.placeholder.com/1600x700/9370DB/FFFFFF?text=CBT+Therapy+Hero");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 3rem;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      margin-bottom: 1.5rem;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
+    }
+
+    /* ========== Purple Tick List (example) ========== */
+    .purple-tick-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .purple-tick-list li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 0.5rem;
+    }
+    .purple-tick-list li::before {
+      content: "✓";
+      color: #7e57c2;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* ========== CTA Buttons ========== */
+    .btn-sian {
+      background: linear-gradient(45deg, #9370DB, #856798);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 0.75rem 1.5rem;
+      margin-right: 1rem;
+      display: inline-block;
+    }
+    .btn-sian:hover {
+      background: linear-gradient(45deg, #856798, #4b0082);
+      color: #fff;
+    }
+    .btn-sian-outline {
+      background: transparent;
+      border: 2px solid #856798;
+      color: #856798;
+      border-radius: 30px;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .btn-sian-outline:hover {
+      background: #856798;
+      color: #fff;
+    }
+
+    /* ========== Footer ========== */
+    .footer {
+      background: linear-gradient(45deg, #96c, #856798);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 2px solid #c9a0dc;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- Navbar with Dropdown -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center py-3" href="index.html">
         <img
-          src="images/logo-talk-with-sian.jpg"
+          src="https://via.placeholder.com/70/9966cc/ffffff?text=Sian"
           alt="Talk with Sian"
           class="rounded-circle me-2"
         />
         <span class="navbar-brand-name ms-2">Talk with Sian</span>
       </a>
       <button
-        class="navbar-toggler ms-auto mb-2 py-3"
+        class="navbar-toggler ms-auto mb-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav py-4">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
@@ -98,13 +270,12 @@
               id="servicesDropdown"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
               <li><a class="dropdown-item" href="services.html">All Services</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="eft-therapy.html">EFT Tapping</a></li>
               <li><a class="dropdown-item" href="trauma-therapy.html">Trauma Therapy</a></li>
               <li><a class="dropdown-item" href="cbt-therapy.html">CBT Therapy</a></li>
@@ -119,118 +290,179 @@
     </div>
   </nav>
 
-  <!-- Cookie Banner -->
+  <!-- COOKIE BANNER -->
   <div id="cookieConsent" class="cookie-consent-banner">
     <div class="container d-flex align-items-center justify-content-between">
       <p class="mb-0">
         We use cookies to improve your experience on our site. By continuing to
         use our site, you accept our use of cookies.
-        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal"
-          >Learn more</a
-        >.
+        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">
+          Learn more
+        </a>.
       </p>
-      <button id="acceptCookies" class="btn btn-primary">Accept</button>
+      <button id="acceptCookies" class="btn-cookie-consent">Accept</button>
     </div>
   </div>
 
-  <!-- Main Content -->
-  <div class="container content-container flex-grow-1 d-flex-column align-items-center justify-content-center pt-5 mt-5">
-    <!-- Hero Section -->
-    <div class="services-hero-section py-5 px-3 my-5">
+  <!-- MAIN CONTENT -->
+  <div class="container content-container flex-grow-1">
+    <!-- HERO SECTION -->
+    <div class="hero-section">
       <h1>CBT Therapy</h1>
-      <p class="lead">
-        Transform negative thought patterns and behaviours with Cognitive
-        Behavioural Therapy (CBT).
+      <p>
+        Reshape negative thought patterns and build practical solutions for better mental health.
       </p>
     </div>
 
-    <div class="row mb-5">
+    <!-- WHAT IS CBT -->
+    <div class="row align-items-center g-5 mb-5">
       <div class="col-md-6">
         <img
-          src="images/cbt-session.jpg"
+          src="https://via.placeholder.com/700x450/ddd/000?text=CBT+Therapy"
           alt="CBT Therapy in Chester & Cheshire"
-          class="img-fluid rounded"
+          class="img-fluid rounded shadow"
         />
       </div>
-      <div class="col-md-6 d-flex flex-column">
+      <div class="col-md-6">
         <h2>What Is CBT?</h2>
         <p>
-          Cognitive Behavioural Therapy is a structured, goal-oriented approach to
-          identifying and challenging unhelpful thought patterns. By replacing
-          negative beliefs with more realistic, balanced perspectives, CBT helps
-          reduce anxiety, depression, and stress.
-        </p>
-        <h3>Who Benefits from CBT?</h3>
-        <ul>
-          <li>Those experiencing depression or generalized anxiety</li>
-          <li>Individuals dealing with panic attacks or phobias</li>
-          <li>Anyone seeking a practical, solutions-focused method</li>
-        </ul>
-        <a href="contact.html" class="btn btn-outline-primary mt-3"
-          >Book Your CBT Session</a
-        >
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2>How Does Our CBT Work?</h2>
-        <p>
-          Each remote session is tailored to your specific goals. We’ll explore
-          the triggers, thoughts, and behaviours contributing to your distress,
-          then collaborate on concrete techniques—like thought records, exposure
-          exercises, or relaxation strategies—to help you develop healthier
-          coping mechanisms.
+          Cognitive Behavioural Therapy (CBT) is a structured, goal-oriented approach
+          focusing on the interplay between thoughts, feelings, and behaviours. 
+          By identifying and challenging unhelpful beliefs, CBT helps mitigate
+          symptoms of anxiety, depression, stress, and more—paving the way for tangible
+          positive change.
         </p>
         <p>
-          Whether you’re managing mild stress or more complex issues, CBT offers a
-          clear framework for positive change, supported by extensive research and
-          clinical success.
+          CBT is especially helpful for those seeking **practical techniques** and
+          clear strategies they can apply to daily life—making it a powerful tool
+          for sustainable well-being.
         </p>
       </div>
     </div>
 
-    <!-- CTA Buttons -->
-    <div class="text-center mb-5">
-      <a href="services.html" class="btn btn-secondary me-2">All Services</a>
-      <a href="contact.html" class="btn btn-primary">Start CBT Now</a>
+    <!-- WHY CHOOSE CBT (with background) -->
+    <div class="row bg-light p-4 p-md-5 rounded-3 mb-5 g-4 align-items-center">
+      <div class="col-lg-6">
+        <h2>Why Choose CBT?</h2>
+        <p>
+          CBT offers an evidence-based, solution-focused framework. Rather than
+          dwelling solely on the past, sessions explore current triggers and
+          actionable coping strategies. This forward-thinking approach appeals
+          to many who want a clear plan for improvement.
+        </p>
+        <p>
+          <strong>Key advantages:</strong>  
+          &bull; Problem-solving mindset  
+          &bull; Collaborative style with your therapist  
+          &bull; Home-based practice to reinforce session insights
+        </p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img
+          src="https://via.placeholder.com/500x350/856798/ffffff?text=Why+Choose+CBT"
+          alt="Why CBT"
+          class="img-fluid rounded shadow"
+        />
+      </div>
     </div>
-  </div>
 
-  <!-- Footer -->
+    <!-- HOW CBT WORKS -->
+    <div class="row align-items-center mb-5 g-5">
+      <div class="col-lg-6">
+        <img
+          src="https://via.placeholder.com/650x400/7e57c2/ffffff?text=How+CBT+Works"
+          alt="How CBT Works"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-lg-6">
+        <h2>How CBT Sessions Work</h2>
+        <p>
+          In each session, we’ll identify triggers, problematic thoughts, and resulting
+          behaviours that fuel distress. We may use strategies like thought
+          records, behavioural experiments, or relaxation techniques. You’ll then
+          apply these methods between sessions to observe changes in real life.
+        </p>
+        <p>
+          This hands-on, **weekly or bi-weekly** approach ensures you see tangible
+          progress, step by step—ultimately leading to greater emotional resilience
+          and coping skills.
+        </p>
+      </div>
+    </div>
+
+    <!-- REMOTE THERAPY BENEFITS -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-md-6">
+        <h2>Convenience of Remote Sessions</h2>
+        <p>
+          Our CBT sessions are offered remotely, so you can attend from the comfort
+          of your home. This is ideal if you have a busy schedule or prefer a private
+          environment. We use secure video platforms to protect your confidentiality,
+          ensuring you can focus solely on your well-being.
+        </p>
+        <p>
+          Remote therapy means no more geographical barriers—if you’re in Chester,
+          Cheshire, or beyond, CBT support is just a click away.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img
+          src="https://via.placeholder.com/600x400/ddd/000?text=Remote+CBT+Sessions"
+          alt="Remote Therapy"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="row bg-gradient p-4 p-md-5 rounded-3 text-white mb-5">
+      <div class="col-md-10 offset-md-1 text-center">
+        <h2>Ready to Start Your CBT Journey?</h2>
+        <p class="mb-4">
+          Build practical solutions, reshape negative thoughts, and strengthen your mental health.
+          Let’s work together to create meaningful change.
+        </p>
+        <a href="services.html" class="btn-sian-outline me-3">
+          All Services
+        </a>
+        <a href="contact.html" class="btn-sian">
+          Start CBT Now
+        </a>
+      </div>
+    </div>
+  </div><!-- END content-container -->
+
+  <!-- FOOTER -->
   <footer class="footer mt-auto">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
+      <div class="row py-3">
+        <div class="col-md-4 mb-3">
           <h5>Quick Links</h5>
           <a href="index.html">Home</a> |
           <a href="about.html">About</a> |
           <a href="services.html">Services</a> |
           <a href="contact.html">Contact</a>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <h5>Legal</h5>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal"
-            >Cookie Policy</a
-          >
-          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal"
-            >Privacy Policy</a
-          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Cookie Policy</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal">Privacy Policy</a>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <h5>Connect with Us</h5>
           <p>Mobile: +44 7754 141453</p>
           <p>Email: <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a></p>
         </div>
       </div>
-      <div class="text-center p-3">
+      <div class="text-center p-2">
         © 2024 Talk with Sian. Designed by
         <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
