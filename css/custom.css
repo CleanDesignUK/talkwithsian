@@ -1,1 +1,194 @@
-body{background-color:#f0f4f8}h1,h2{font-family:'Playfair Display',serif!important}h3,h4{font-family:Lora,serif!important}body,li,p,span{font-family:Roboto,sans-serif!important}.btn,.callout,.highlight,a.btn,button{font-family:Montserrat,sans-serif!important}.navbar{background:linear-gradient(45deg,#96c,#856798);box-shadow:0 4px 6px rgba(0,0,0,.1);border-bottom:2px solid #c9a0dc}.navbar-brand{display:flex;align-items:center}.navbar-brand-name{font-family:Raleway,sans-serif;font-weight:700;color:#fff;font-size:1.25rem}.navbar-brand img{border-radius:50%;height:90px;border:2px solid #c9a0dc}.navbar-toggler{border:none}.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-nav .nav-link{color:#fff;transition:color .3s ease-in-out}.navbar-nav .nav-link:hover{color:#c9a0dc}.content-container{min-height:100vh;background-color:#fff;padding-top:70px}.footer{background:linear-gradient(45deg,#96c,#856798);color:#fff;padding:30px 0;text-align:center;border-top:2px solid #c9a0dc}.footer a{color:#fff;text-decoration:none;margin:0 15px}.footer a:hover{color:#fff;text-decoration:underline}.footer .social-icons a{margin:0 10px;color:#fff;font-size:1.5rem}@media (max-width:991.98px){.navbar-nav{text-align:center}.navbar-brand{justify-content:center}.navbar-brand-name{text-align:center;width:100%}.navbar-toggler{margin-top:10px;align-self:center}.footer .social-icons a{font-size:1.2rem}}.cookie-consent-banner{position:fixed;bottom:0;width:100%;background-color:indigo;color:#fff;padding:15px 30px;box-shadow:0 -2px 10px rgba(0,0,0,.1);z-index:1000}.cookie-consent-banner p{margin:0;font-size:1rem}.cookie-consent-banner a{color:#c9a0dc;text-decoration:underline}.cookie-consent-banner a:hover{color:#fff}.cookie-consent-banner button{background-color:#7e57c2;color:#fff;border:none;padding:10px 20px;border-radius:5px;font-weight:700;cursor:pointer}.cookie-consent-banner button:hover{background-color:#856798}@media (max-width:767.98px){.footer{text-align:center;padding:15px 0}.footer .social-icons a{font-size:1.2rem}.navbar-brand img{height:60px}}@media (max-width:467.98px){.navbar-brand img{height:50px}}@media (min-width:1200px){.navbar-brand-name{font-size:1.75rem}}
+/* --------------------------------------------------
+   custom.css - Global Styles
+   Applies to all pages
+-------------------------------------------------- */
+
+/* Background & Typography */
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Heading Fonts */
+  h1, h2 {
+    font-family: 'Playfair Display', serif !important;
+  }
+  
+  /* Subheading Fonts */
+  h3, h4 {
+    font-family: Lora, serif !important;
+  }
+  
+  /* Paragraph Fonts */
+  body, li, p, span {
+    font-family: Roboto, sans-serif !important;
+    color: #333;
+  }
+  
+  /* Buttons & Call-to-Action */
+  .btn, .callout, .highlight, a.btn, button {
+    font-family: Montserrat, sans-serif !important;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(45deg, #96c, #856798);
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    border-bottom: 2px solid #c9a0dc;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand img {
+    border-radius: 50%;
+    height: 90px;
+    border: 2px solid #c9a0dc;
+  }
+  .navbar-brand-name {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler-icon {
+    /* Custom hamburger icon (white) */
+    background-image:
+      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-nav .nav-link {
+    color: #fff;
+    transition: color .3s ease-in-out;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #c9a0dc;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  .dropdown-item {
+    color: #333 !important;
+  }
+  .dropdown-item:hover {
+    background-color: #ece6f0;
+    color: #7e57c2 !important;
+  }
+  
+  /* Content Container: ensures top spacing for fixed nav */
+  .content-container {
+    min-height: 100vh;
+    background-color: #fff;
+    padding-top: 100px; /* extra space for fixed navbar */
+  }
+  
+  /* Footer */
+  .footer {
+    background: linear-gradient(45deg, #96c, #856798);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 2px solid #c9a0dc;
+  }
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  .footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  /* Cookie Consent Banner */
+  .cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: indigo;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+    z-index: 1000;
+  }
+  .cookie-consent-banner p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .cookie-consent-banner a {
+    color: #c9a0dc;
+    text-decoration: underline;
+  }
+  .cookie-consent-banner a:hover {
+    color: #fff;
+  }
+  .cookie-consent-banner button {
+    background-color: #7e57c2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .cookie-consent-banner button:hover {
+    background-color: #856798;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-brand {
+      justify-content: center;
+    }
+    .navbar-brand-name {
+      text-align: center;
+      width: 100%;
+    }
+    .navbar-toggler {
+      margin-top: 10px;
+      align-self: center;
+    }
+    .footer .social-icons a {
+      font-size: 1.2rem;
+    }
+    .navbar-brand img {
+      height: 60px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .footer {
+      text-align: center;
+      padding: 15px 0;
+    }
+    .footer .social-icons a {
+      font-size: 1.2rem;
+    }
+    .navbar-brand img {
+      height: 60px;
+    }
+  }
+  @media (max-width: 467.98px) {
+    .navbar-brand img {
+      height: 50px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .navbar-brand-name {
+      font-size: 1.75rem;
+    }
+  }
+  
