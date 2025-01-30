@@ -1,0 +1,163 @@
+
+        /* Services Page Styles */
+        .services-hero-section {
+            background: linear-gradient(45deg, #9966CC, #856798); /* Indigo purple for a professional, calming feel */
+             color: #ffffff;
+             text-align: center;
+             padding: 3rem 2rem;
+             margin-bottom: 2rem;
+             border-radius: 10px;
+             border: 5px solid #ffffff; /* 3D white border for a premium feel */
+             box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Light shadow for a 3D effect */
+         }
+ h1 {            font-weight: bold;
+            font-size: 2.3rem;
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); }
+         .service-card {
+             background-color: #ffffff;
+             border-radius: 10px;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             transition: transform 0.3s;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+         }
+ 
+         .service-card:hover {
+             transform: scale(1.05);
+         }
+ 
+         .service-card img {
+             border-radius: 10px;
+             margin-bottom: 1rem;
+             width: 100%;
+             height: 250px;
+             object-fit: cover;
+         }
+ 
+         .service-card h3 {
+             color: #7e57c2; /* Indigo purple */
+             font-weight: bold;
+         }
+ 
+         .service-card p {
+             font-size: 1.1rem;
+             line-height: 1.6;
+             flex-grow: 1;
+         }
+ 
+         .pricing-section {
+             background-color: #f3e5f5; /* Lavender background */
+             padding: 2rem 3rem;
+             border-radius: 10px;
+             text-align: center;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             margin-top: 5rem;
+             margin-bottom: 5rem;
+         }
+ 
+         .pricing-section h2 {
+             color: #7e57c2; /* Indigo purple */
+             font-weight: bold;
+             margin-bottom: 2rem;
+         }
+ 
+         .pricing-section p {
+             font-size: 1.2rem;
+             color: #333;
+             margin-bottom: 0.5rem;
+         }
+ 
+         .pricing-section p:last-child {
+             color: #555;
+             font-size: 1rem;
+         }
+ 
+         .testimonial {
+             background-color: #f8f9fa;
+             border-radius: 10px;
+             text-align: center;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+ 
+         .testimonial p {
+             font-style: italic;
+         }
+ 
+         .testimonial h5 {
+             font-weight: bold;
+             margin-top: 1rem;
+         }
+ 
+         /* Credentials Section */
+         .credentials-section {
+             background-color: #ffffff;
+             padding: 2rem;
+             border-radius: 10px;
+             text-align: center;
+             margin-bottom: 2rem;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+ 
+         .credentials-section h2 {
+             color: #7e57c2; /* Indigo purple */
+             font-weight: bold;
+             margin-bottom: 1rem;
+         }
+ 
+         .credentials-section p {
+             font-size: 1.2rem;
+             line-height: 1.6;
+         }
+ 
+         .btn-primary {
+             background-color: #7e57c2; /* Medium purple */
+             border: none;
+             padding: 0.75rem 1.5rem;
+             font-size: 1.5rem;
+             border-radius: 50px;
+             font-weight: bold;
+         }
+ 
+         .btn-primary1 {
+             background-color: white; /* White background */
+             border: none;
+             padding: 0.75rem 1.5rem;
+             font-size: 1.5rem;
+             border-radius: 50px;
+             color: #7e57c2;/* Medium purple text */
+             font-weight: bold;
+         }
+ 
+         /* Schedule Session Section */
+         .schedule-section-container {
+             background: linear-gradient(45deg, #9966CC, #856798);
+             color: #ffffff;
+             padding: 2rem;
+             border-radius: 10px;
+             text-align: center;
+             margin-top: 3rem;
+             margin-bottom: 3rem;
+         }
+ 
+         .schedule-heading {
+             font-size: 2rem;
+             color: #ffffff;
+             margin-bottom: 1rem;
+             font-weight: bold;
+         }
+ 
+         .schedule-description {
+             font-size: 1.2rem;
+             color: #d1e0f0; /* Light lavender */
+             margin-bottom: 2rem;
+             font-weight: 300;
+         }
+ 
+         /* Responsive Adjustments */
+         @media (max-width: 425px) {
+             .service-card img {
+                 height: 150px; /* Reduced size for smaller screens */
+             }
+         }
+    

@@ -1,0 +1,272 @@
+ 
+      
+  /* Hero Section */
+  .hero-section {
+    background-image: url("/static/images/talkwithsian-hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+ 
+}
+
+.hero-section h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Strong shadow for readability */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Strong shadow for readability */
+}
+
+.hero-section .btn-primary {
+    background: linear-gradient(45deg, #9370DB, #856798); /* Medium purple to Dark Lavender gradient */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    color: #ffffff; /* White text for contrast */
+}
+
+.hero-section .btn-primary:hover {
+    background: linear-gradient(45deg, #856798, #4b0082); /* Darker gradient on hover */
+}
+
+/* Navigation Cards */
+/* Navigation Cards */
+.nav-card {
+    background-color: #E6E6FA; /* Lavender background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure cards stretch to the full height of their container */
+    border: 5px solid #ffffff; /* 3D white border */
+}
+
+.nav-card:hover {
+    transform: scale(1.05);
+}
+
+.nav-card img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+.nav-card img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 230, 250, 0.5); /* Very light purple overlay */
+    border-radius: 10px;
+}
+
+.nav-card h3 {
+    color: #9370DB; /* Dark Purple */
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.nav-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black; /* Darker purple text */
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Allow the paragraph to grow and fill available space */
+    display: flex;
+    align-items: center; /* Center-align text vertically */
+    justify-content: center; /* Center-align text horizontally */
+}
+
+.nav-card a {
+    color: #ffffff; /* White text for better readability */
+    background: linear-gradient(45deg, #9370DB, #856798); /* Gradient purple */
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: auto; /* Ensure the button sticks to the bottom of the card */
+}
+
+.nav-card a:hover {
+    background: linear-gradient(45deg, #856798, #4b0082); /* Darker gradient on hover */
+}
+/* Testimonials Section */
+.testimonial-section {
+    background-color: #EDE7F6; /* Soft pastel lavender */
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    color: #7e57c2; /* Dark Purple */
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: black; /* Darker purple for text */
+}
+
+.testimonial h5 {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #7e57c2; /* Medium purple for names */
+}
+
+/* Credentials Section */
+.credentials-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credentials-section h2 {
+    color: #7e57c2; /* Dark Purple */
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.credentials-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black; /* Darker purple text */
+}
+
+/* Expandable Reviews */
+.review-card {
+    display: none;
+}
+
+.review-card.show {
+    display: block;
+}
+
+.expand-btn {
+    background: linear-gradient(45deg, #9370DB, #856798); /* Gradient lavender to dark purple */
+    color: #ffffff; /* White text for readability */
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.expand-btn:hover {
+    background: linear-gradient(45deg, #856798, #4b0082); /* Darker gradient on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .testimonial-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .testimonial {
+        flex: 1 1 45%;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-card img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Reduce the paragraph text size */
+    }
+
+    .hero-section .btn-primary {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 0.5rem 1rem; /* Adjust padding for the button */
+    }
+}
+
+
+.about-navigation {
+background-color: #f3f4f6; /* Light grey background */
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.navigation-title {
+font-size: 1.75rem;
+font-weight: bold;
+color: #7e57c2; /* Indigo color for a professional look */
+margin-bottom: 1.5rem;
+}
+
+.navigation-links {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+}
+
+.navigation-link {
+display: inline-block;
+background-color: #7e57c2; /* Medium purple */
+color: #ffffff;
+padding: 0.75rem 1.5rem;
+border-radius: 50px; /* Rounded pill shape */
+text-decoration: none;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation-link:hover {
+background-color: #4b0082; /* Darker purple on hover */
+transform: translateY(-2px); /* Lift on hover */
+}
+
+@media (max-width: 768px) {
+.navigation-links {
+flex-direction: column;
+gap: 0.5rem;
+}
+}
