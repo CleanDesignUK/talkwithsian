@@ -1,586 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Therapy Services in Chester & Cheshire | Talk with Sian</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Therapy Services in Chester &amp; Cheshire | Talk with Sian</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-talk-with-sian.jpg" type="image/jpeg" />
 
-  <!-- SEO Meta Tags -->
-  <meta
-    name="description"
-    content="Explore our comprehensive range of remote therapy services, including EFT Tapping, Trauma Therapy, and CBT. Supporting women across Chester, Cheshire, and beyond."
-  />
-  <meta
-    name="keywords"
-    content="EFT Tapping, Emotional Freedom Technique, Trauma Therapy Chester, CBT near me, cbt for depression, therapy near me, therapy services Cheshire, counselling Cheshire, therapist near me"
-  />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Talk with Sian" />
-  <meta name="geo.region" content="GB" />
-  <meta name="geo.placename" content="Chester, Cheshire, England" />
-  <meta name="geo.position" content="53.1905;-2.8919" />
-  <meta name="ICBM" content="53.1905, -2.8919" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Explore our comprehensive range of therapy services, including EFT Tapping, Trauma Therapy, and CBT. Serving women in Chester, Cheshire, and beyond with bespoke counselling and support."
+    />
+    <meta
+      name="keywords"
+      content="EFT Tapping, Emotional Freedom Technique, Trauma Therapy Chester, CBT near me, CBT for depression, therapy near me, therapy services Cheshire, counselling Cheshire, therapist near me"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Talk with Sian" />
+    <meta name="geo.region" content="GB" />
+    <meta name="geo.placename" content="Chester, Cheshire, England" />
+    <meta name="geo.position" content="53.1905;-2.8919" />
+    <meta name="ICBM" content="53.1905, -2.8919" />
 
-  <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Our Services | Talk with Sian - Remote Therapy in Chester & Cheshire"
-  />
-  <meta
-    property="og:description"
-    content="Offering EFT Tapping, Trauma Therapy, and CBT in Chester & Cheshire. Experience specialised remote counselling for women seeking professional support."
-  />
-  <meta property="og:url" content="https://www.talkwithsian.com/services" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/logo-talk-with-sian.jpg" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Our Services | Talk with Sian – Professional Therapy in Chester &amp; Cheshire"
+    />
+    <meta
+      property="og:description"
+      content="Offering EFT Tapping, Trauma Therapy, and CBT in Chester &amp; Cheshire. Discover our tailored therapy and counselling services for women seeking professional support."
+    />
+    <meta property="og:url" content="https://www.talkwithsian.com/services" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logo-talk-with-sian.jpg" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Our Services | Talk with Sian - Remote Therapy in Chester & Cheshire"
-  />
-  <meta
-    name="twitter:description"
-    content="Discover specialised therapy services for women, including EFT, Trauma Therapy, and CBT. Book your free consultation today."
-  />
-  <meta name="twitter:image" content="images/logo-talk-with-sian.jpg" />
-  <link rel="canonical" href="https://talkwithsian.com/services/" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Our Services | Talk with Sian – Professional Therapy in Chester &amp; Cheshire"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover specialised therapy services for women, including EFT Tapping, Trauma Therapy, and CBT. Book your free consultation today."
+    />
+    <meta name="twitter:image" content="images/logo-talk-with-sian.jpg" />
+    <link rel="canonical" href="https://talkwithsian.com/services/" />
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- ======== Inline Custom CSS ======== -->
-  <style>
-    /* ===================== BODY & GLOBALS ===================== */
-    body {
-      font-family: Roboto, sans-serif;
-      background-color: #f0f4f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 1rem;
-    }
-
-    /* ===================== NAVBAR ===================== */
-    .navbar {
-      background: linear-gradient(45deg, #96c, #856798);
-      border-bottom: 2px solid #c9a0dc;
-      box-shadow: 0 4px 6px rgba(0,0,0,.1);
-    }
-    .navbar-brand img {
-      border-radius: 50%;
-      border: 2px solid #c9a0dc;
-      height: 70px;
-    }
-    .navbar-brand-name {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .navbar-nav .nav-link {
-      color: #fff;
-      transition: color 0.3s ease;
-    }
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-      color: #c9a0dc;
-    }
-
-    /* ===================== COOKIE BANNER ===================== */
-    .cookie-consent-banner {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: indigo;
-      color: #fff;
-      padding: 15px 30px;
-      display: none; /* Shown if user hasn't accepted cookies */
-      box-shadow: 0 -2px 10px rgba(0,0,0,.1);
-      z-index: 1000;
-    }
-    .cookie-consent-banner a {
-      color: #c9a0dc;
-      text-decoration: underline;
-    }
-
-    /* ============= CUSTOM BUTTON STYLES ============= */
-    .btn-sian {
-      background: linear-gradient(45deg, #9370DB, #856798);
-      color: #fff;
-      font-weight: bold;
-      border: none;
-      border-radius: 50px;
-      padding: 0.75rem 1.5rem;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .btn-sian:hover {
-      background: linear-gradient(45deg, #856798, #4b0082);
-    }
-    .btn-sian-outline {
-      background: transparent;
-      border: 2px solid #856798;
-      color: #856798;
-      border-radius: 50px;
-      padding: 0.75rem 1.5rem;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    .btn-sian-outline:hover {
-      background: #856798;
-      color: #fff;
-    }
-    /* Replacing old .btn-primary1 with .btn-sian */
-    .btn-sian-lg {
-      font-size: 1.5rem;
-      border-radius: 50px;
-      padding: 0.75rem 2rem;
-      font-weight: bold;
-    }
-
-    /* ===================== HERO SECTION ===================== */
-    .services-hero-section {
-      background: linear-gradient(45deg, #9966cc, #856798);
-      color: #ffffff;
-      text-align: center;
-      padding: 3rem 2rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      border: 5px solid #ffffff; /* 3D border look */
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    }
-    .services-hero-section h1 {
-      font-weight: bold;
-      font-size: 2.5rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-      margin-bottom: 1rem;
-    }
-    .services-hero-section p.lead {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-      line-height: 1.5;
-    }
-
-    /* ===================== PRICING SECTION ===================== */
-    .pricing-section {
-      background-color: #f3e5f5; /* Light lavender */
-      padding: 2rem 3rem;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .pricing-section h2 {
-      color: #7e57c2;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-    }
-    .pricing-section p {
-      font-size: 1.1rem;
-      color: #333;
-      margin-bottom: 0.75rem;
-    }
-    .pricing-section p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ===================== SERVICES GRID ===================== */
-    .service-card {
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-      display: flex;
-      flex-direction: column;
-      padding: 1.5rem;
-      height: 100%; /* fill the column */
-    }
-    .service-card:hover {
-      transform: scale(1.03);
-    }
-    .service-card img {
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .service-card h3 {
-      color: #7e57c2;
-      margin-top: 0;
-      font-weight: bold;
-      margin-bottom: 0.75rem;
-    }
-    .service-card p {
-      font-size: 1rem;
-      line-height: 1.6;
-      flex-grow: 1; /* allows text to fill space before button */
-      margin-bottom: 1rem;
-    }
-
-    /* ===================== SCHEDULE SECTION ===================== */
-    .schedule-section-container {
-      background: linear-gradient(45deg, #9966cc, #856798);
-      color: #ffffff;
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-    .schedule-heading {
-      font-size: 2rem;
-      color: #ffffff;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-    .schedule-description {
-      font-size: 1.2rem;
-      color: #d1e0f0;
-      margin-bottom: 2rem;
-      font-weight: 300;
-    }
-
-    /* ===================== FOOTER ===================== */
-    .footer {
-      background: linear-gradient(45deg, #96c, #856798);
-      color: #fff;
-      padding: 30px 0;
-      text-align: center;
-      border-top: 2px solid #c9a0dc;
-    }
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-    .footer a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    /* ===================== RESPONSIVE ADJUSTMENTS ===================== */
-    @media (max-width: 992px) {
-      .service-card img {
-        height: 180px;
+    <!-- ======== Inline Custom CSS ======== -->
+    <style>
+      /* ===================== BODY & GLOBALS ===================== */
+      body {
+        font-family: Roboto, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
       }
-    }
-    @media (max-width: 576px) {
-      .service-card img {
-        height: 150px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 1rem;
+      }
+
+      /* ===================== NAVBAR ===================== */
+      .navbar {
+        background: linear-gradient(45deg, #96c, #856798);
+        border-bottom: 2px solid #c9a0dc;
+        box-shadow: 0 4px 6px rgba(0,0,0,.1);
+      }
+      .navbar-brand img {
+        border-radius: 50%;
+        border: 2px solid #c9a0dc;
+        height: 70px;
+      }
+      .navbar-brand-name {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fff;
+      }
+      .navbar-nav .nav-link {
+        color: #fff;
+        transition: color 0.3s ease;
+      }
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link.active {
+        color: #c9a0dc;
+      }
+
+      /* ===================== COOKIE BANNER ===================== */
+      .cookie-consent-banner {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: indigo;
+        color: #fff;
+        padding: 15px 30px;
+        display: none;
+        box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+        z-index: 1000;
+      }
+      .cookie-consent-banner a {
+        color: #c9a0dc;
+        text-decoration: underline;
+      }
+
+      /* ============= CUSTOM BUTTON STYLES ============= */
+      .btn-sian {
+        background: linear-gradient(45deg, #9370DB, #856798);
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        padding: 0.75rem 1.5rem;
+        display: inline-block;
+        transition: background 0.3s ease;
+      }
+      .btn-sian:hover {
+        background: linear-gradient(45deg, #856798, #4b0082);
+      }
+      .btn-sian-outline {
+        background: transparent;
+        border: 2px solid #856798;
+        color: #856798;
+        border-radius: 50px;
+        padding: 0.75rem 1.5rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      .btn-sian-outline:hover {
+        background: #856798;
+        color: #fff;
+      }
+      .btn-sian-lg {
+        font-size: 1.5rem;
+        border-radius: 50px;
+        padding: 0.75rem 2rem;
+        font-weight: bold;
+      }
+
+      /* ===================== HERO SECTION ===================== */
+      .services-hero-section {
+        background: linear-gradient(45deg, #9966cc, #856798);
+        color: #ffffff;
+        text-align: center;
+        padding: 3rem 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        border: 5px solid #ffffff;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
       }
       .services-hero-section h1 {
-        font-size: 2rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        margin-bottom: 1rem;
       }
-    }
-  </style>
-</head>
+      .services-hero-section p.lead {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        line-height: 1.5;
+      }
 
-<body class="d-flex flex-column min-vh-100">
-  <!-- ======== NAVBAR ======== -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center py-3" href="index.html">
-        <img
-          src="images/logo-talk-with-sian.jpg"
-          alt="Talk with Sian"
-          class="rounded-circle me-2"
-        />
-        <span class="navbar-brand-name ms-2">Talk with Sian</span>
-      </a>
-      <button
-        class="navbar-toggler ms-auto mb-2 py-3"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      /* ===================== PRICING SECTION ===================== */
+      .pricing-section {
+        background-color: #f3e5f5;
+        padding: 2rem 3rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pricing-section h2 {
+        color: #7e57c2;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      .pricing-section p {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 0.75rem;
+      }
+      .pricing-section p:last-child {
+        margin-bottom: 0;
+      }
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav py-4">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+      /* ===================== SERVICES GRID ===================== */
+      .service-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        height: 100%;
+      }
+      .service-card:hover {
+        transform: scale(1.03);
+      }
+      .service-card img {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .service-card h3 {
+        color: #7e57c2;
+        margin-top: 0;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+      }
+      .service-card p {
+        font-size: 1rem;
+        line-height: 1.6;
+        flex-grow: 1;
+        margin-bottom: 1rem;
+      }
 
-          <!-- Services Dropdown -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle active"
-              href="#"
-              id="servicesDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li><a class="dropdown-item" href="services.html">All Services</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="eft-therapy.html">EFT Tapping</a></li>
-              <li><a class="dropdown-item" href="trauma-therapy.html">Trauma Therapy</a></li>
-              <li><a class="dropdown-item" href="cbt-therapy.html">CBT Therapy</a></li>
-            </ul>
-          </li>
+      /* ===================== SCHEDULE SECTION ===================== */
+      .schedule-section-container {
+        background: linear-gradient(45deg, #9966cc, #856798);
+        color: #ffffff;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      .schedule-heading {
+        font-size: 2rem;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+      .schedule-description {
+        font-size: 1.2rem;
+        color: #d1e0f0;
+        margin-bottom: 2rem;
+        font-weight: 300;
+      }
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+      /* ===================== FOOTER ===================== */
+      .footer {
+        background: linear-gradient(45deg, #96c, #856798);
+        color: #fff;
+        padding: 30px 0;
+        text-align: center;
+        border-top: 2px solid #c9a0dc;
+      }
+      .footer a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+      .footer a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      /* ===================== RESPONSIVE ADJUSTMENTS ===================== */
+      @media (max-width: 992px) {
+        .service-card img {
+          height: 180px;
+        }
+      }
+      @media (max-width: 576px) {
+        .service-card img {
+          height: 150px;
+        }
+        .services-hero-section h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center py-3" href="index.html">
+          <img
+            src="images/logo-talk-with-sian.jpg"
+            alt="Talk with Sian"
+            class="rounded-circle me-2"
+          />
+          <span class="navbar-brand-name ms-2">Talk with Sian</span>
+        </a>
+        <button
+          class="navbar-toggler ms-auto mb-2 py-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav py-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="eft-therapy.html">EFT Tapping</a></li>
+                <li><a class="dropdown-item" href="trauma-therapy.html">Trauma Therapy</a></li>
+                <li><a class="dropdown-item" href="cbt-therapy.html">CBT Therapy</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- ======== COOKIE BANNER ======== -->
-  <div id="cookieConsent" class="cookie-consent-banner">
-    <div class="container d-flex align-items-center justify-content-between">
-      <p class="mb-0">
-        We use cookies to improve your experience on our site. By continuing to
-        use our site, you accept our use of cookies.
-        <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Learn more</a>.
-      </p>
-      <!-- Change to your custom button style if desired -->
-      <button id="acceptCookies" class="btn-sian-outline">Accept</button>
-    </div>
-  </div>
-
-  <!-- ======== MAIN CONTENT ======== -->
-  <div class="container content-container flex-grow-1 d-flex-column align-items-center justify-content-center pt-5 mt-5">
-    
-    <!-- Hero Section -->
-    <div class="services-hero-section py-5 px-3 my-5" id="discovery-call">
-      <h1>Our Remote Services</h1>
-      <p class="lead">
-        Welcome to Talk with Sian, where we provide specialised remote counselling
-        services for women in Chester, Cheshire, and beyond. Our compassionate,
-        expert care helps you navigate life’s challenges with confidence.
-      </p>
-      <a href="#schedule" class="btn-sian btn-sian-lg">Schedule Your Free Consultation</a>
-    </div>
-
-    <!-- Pricing Section -->
-    <div class="pricing-section" id="pricing-section">
-      <h2>Pricing</h2>
-      <p><strong>Initial Consultation:</strong> Free</p>
-      <p><strong>50-Minute Session:</strong> £50</p>
-      <p>
-        All services are provided remotely, allowing you to receive professional
-        support from the comfort and privacy of your own home.
-      </p>
-    </div>
-
-    <!-- Services Grid -->
-    <div class="container" id="services-row">
-      <div class="row g-4">
-        <!-- Example: Each col uses 'd-flex align-items-stretch' so cards match height -->
-        
-        <!-- Service Card 1: EFT -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/eft-1.jpg" alt="EFT Tapping Therapy" />
-            <h3>Emotional Freedom Technique (EFT)</h3>
-            <p>
-              Manage anxiety, trauma, and emotional distress with EFT Tapping.
-              Combining cognitive therapy with acupressure points, EFT helps you
-              release negative emotions and restore inner balance.
-            </p>
-            <a class="btn-sian-outline mt-auto" href="eft-therapy.html">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Service Card 2: Trauma Therapy -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/trauma.jpg" alt="Trauma Therapy Cheshire" />
-            <h3>Trauma Therapy</h3>
-            <p>
-              Our trauma-focused approach supports women through healing
-              past experiences, including domestic abuse, PTSD, or other forms
-              of emotional harm. Work towards recovery in a safe, understanding
-              environment.
-            </p>
-            <a class="btn-sian-outline mt-auto" href="trauma-therapy.html">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Service Card 3: CBT Therapy -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/cbt.jpg" alt="CBT Therapy near me" />
-            <h3>CBT Therapy</h3>
-            <p>
-              Looking for CBT near you? We offer Cognitive Behavioural Therapy
-              sessions to help reframe negative thought patterns, address
-              depression or anxiety, and support long-term mental well-being.
-            </p>
-            <a class="btn-sian-outline mt-auto" href="cbt-therapy.html">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Service Card 4: Walk-and-Talk Therapy -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/walkntalkj.jpg" alt="Walk-and-Talk Therapy" />
-            <h3>Walk-and-Talk Therapy</h3>
-            <p>
-              Experience therapy amidst nature’s calming surroundings. Our
-              walk-and-talk sessions provide a relaxed setting to discuss your
-              concerns and promote emotional release.
-            </p>
-            <!-- No button, but you could add one if needed -->
-          </div>
-        </div>
-
-        <!-- Service Card 5: Person-Centred Counselling -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/personal.jpg" alt="Person-Centred Counselling" />
-            <h3>Person-Centred Counselling</h3>
-            <p>
-              A humanistic approach that places you at the heart of therapy.
-              Collaborate in a judgement-free space to explore personal growth
-              and self-discovery.
-            </p>
-            <!-- Optional "Learn More" button if a dedicated page exists -->
-          </div>
-        </div>
-
-        <!-- Service Card 6: Anxiety & Depression -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/anx-depr.jpg" alt="Anxiety & Depression Counselling" />
-            <h3>Anxiety & Depression</h3>
-            <p>
-              Specialised counselling to help you cope with persistent anxiety,
-              panic, or depressive episodes. Build resilience with effective
-              coping strategies and compassionate guidance.
-            </p>
-            <!-- Optional "Learn More" button if a dedicated page exists -->
-          </div>
-        </div>
-
-        <!-- Service Card 7: Stress Management -->
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-          <div class="service-card">
-            <img src="images/stress.jpg" alt="Stress Management Chester" />
-            <h3>Stress Management</h3>
-            <p>
-              Overwhelmed by daily pressures? Our stress management sessions
-              help you develop practical techniques to restore balance and
-              prevent burnout.
-            </p>
-            <!-- Optional "Learn More" button if a dedicated page exists -->
-          </div>
-        </div>
-      </div> <!-- .row -->
-    </div> <!-- .container -->
-
-    <!-- Schedule Section -->
-    <div class="container schedule-section-container" id="schedule">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="schedule-heading">
-            Schedule Your <strong>Remote</strong> Session
-          </h2>
-          <p class="schedule-description">
-            Book a free consultation at a time that suits you. Simply choose a
-            slot from the calendar below.
-          </p>
-        </div>
+    <!-- ======== COOKIE BANNER ======== -->
+    <div id="cookieConsent" class="cookie-consent-banner">
+      <div class="container d-flex align-items-center justify-content-between">
+        <p class="mb-0">
+          We use cookies to improve your experience on our site. By continuing to
+          use our site, you accept our use of cookies.
+          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Learn more</a>.
+        </p>
+        <button id="acceptCookies" class="btn-sian-outline">Accept</button>
       </div>
     </div>
 
-    <!-- Calendly Inline Widget -->
-    <div
-      class="calendly-inline-widget"
-      data-url="https://calendly.com/talkwithsian/30min?primary_color=d400ff"
-      style="min-width:320px;height:700px;">
-    </div>
+    <!-- ======== MAIN CONTENT ======== -->
+    <div class="container content-container flex-grow-1 d-flex-column align-items-center justify-content-center pt-5 mt-5">
+      
+      <!-- Hero Section -->
+      <div class="services-hero-section py-5 px-3 my-5" id="discovery-call">
+        <h1>Our Therapy Services</h1>
+        <p class="lead">
+          Welcome to Talk with Sian. We provide a comprehensive range of bespoke therapy and counselling services designed to help you overcome life’s challenges in Chester, Cheshire, and beyond.
+        </p>
+        <a href="#schedule" class="btn-sian btn-sian-lg">Schedule Your Free Consultation</a>
+      </div>
+
+      <!-- Pricing Section -->
+      <div class="pricing-section" id="pricing-section">
+        <h2>Pricing</h2>
+        <p><strong>Initial Consultation:</strong> Free</p>
+        <p><strong>50-Minute Session:</strong> £50</p>
+        <p>
+          All services are delivered online, ensuring professional support from the comfort and privacy of your own home.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="container" id="services-row">
+        <div class="row g-4">
+          <!-- Service Card 1: EFT -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="service-card">
+              <img src="images/eft-1.jpg" alt="EFT Tapping Therapy" />
+              <h3>Emotional Freedom Technique (EFT)</h3>
+              <p>
+                Manage anxiety, trauma, and emotional distress with EFT Tapping. Combining cognitive therapy with acupressure, EFT helps you release negative emotions and restore inner balance.
+              </p>
+              <a class="btn-sian-outline mt-auto" href="eft-therapy.html">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service Card 2: Trauma Therapy -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="service-card">
+              <img src="images/trauma-therapy-cheshire.jpg" alt="Trauma Therapy Cheshire" />
+              <h3>Trauma Therapy</h3>
+              <p>
+                Our trauma-focused approach supports women through healing from past experiences, including domestic abuse and PTSD. Work towards recovery in a safe, understanding environment.
+              </p>
+              <a class="btn-sian-outline mt-auto" href="trauma-therapy.html">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service Card 3: CBT Therapy -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="service-card">
+              <img src="images/CBT.jpg" alt="CBT Therapy near me" />
+              <h3>CBT Therapy</h3>
+              <p>
+                Benefit from Cognitive Behavioural Therapy to reframe negative thought patterns, address depression or anxiety, and support long-term mental well-being.
+              </p>
+              <a class="btn-sian-outline mt-auto" href="cbt-therapy.html">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service Card 4: Walk-and-Talk Therapy -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="service-card">
+              <img src="images/walk-and-talk.jpg" alt="Walk-and-Talk Therapy" />
+              <h3>Walk-and-Talk Therapy</h3>
+              <p>
+                Experience therapy amidst nature’s calming surroundings. Our walk-and-talk sessions offer a relaxed setting to discuss your concerns and promote emotional release.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 5: Person-Centred Counselling -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="service-card">
+              <img src="images/personal.jpg" alt="Person-Centred Counselling" />
+              <h3>Person-Centred Counselling</h3>
+              <p>
+                A humanistic approach that places you at the centre of your therapy. Collaborate in a judgement-free space to explore personal growth and self-discovery.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 6: Anxiety & Depression -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="service-card">
+              <img src="images/anx-depr.jpg" alt="Anxiety & Depression Counselling" />
+              <h3>Anxiety &amp; Depression</h3>
+              <p>
+                Specialised counselling to help you cope with persistent anxiety, panic, or depressive episodes. Build resilience with effective coping strategies and compassionate guidance.
+              </p>
+            </div>
+          </div>
+
+         
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+
+      <!-- Schedule Section -->
+      <div class="container schedule-section-container" id="schedule">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="schedule-heading">Schedule Your Consultation</h2>
+            <p class="schedule-description">
+              Book a free consultation at a time that suits you. Simply choose a slot from the calendar below.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendly Inline Widget -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/talkwithsian/30min?primary_color=d400ff"
+        style="min-width:320px;height:700px;">
+      </div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async>
+      </script>
+    </div> <!-- End .content-container -->
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Quick Links</h5>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Legal</h5>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Cookie Policy</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal">Privacy Policy</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Connect with Us</h5>
+            <p>Mobile: +44 7754 141453</p>
+            <p>Email: <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="text-center p-3">
+          © 2024 Talk with Sian. Designed by
+          <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======== SCRIPTS ======== -->
+    <!-- Bootstrap JS -->
     <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-      async>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
     </script>
 
-  </div> <!-- End .content-container -->
+    <!-- Cookie Consent -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const consentBanner = document.getElementById("cookieConsent");
+        const acceptButton = document.getElementById("acceptCookies");
 
-  <!-- ======== FOOTER ======== -->
-  <footer class="footer mt-auto">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>Quick Links</h5>
-          <a href="index.html">Home</a> |
-          <a href="about.html">About</a> |
-          <a href="services.html">Services</a> |
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Legal</h5>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiePolicyModal">Cookie Policy</a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#policyModal">Privacy Policy</a>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Connect with Us</h5>
-          <p>Mobile: +44 7754 141453</p>
-          <p>Email: <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a></p>
-        </div>
-      </div>
-      <div class="text-center p-3">
-        © 2024 Talk with Sian. Designed by
-        <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
-      </div>
-    </div>
-  </footer>
+        if (localStorage.getItem("cookieConsent") !== "true") {
+          consentBanner.style.display = "block";
+        } else {
+          consentBanner.style.display = "none";
+        }
 
-  <!-- ======== SCRIPTS ======== -->
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-  </script>
-
-  <!-- Cookie Consent -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const consentBanner = document.getElementById("cookieConsent");
-      const acceptButton = document.getElementById("acceptCookies");
-
-      if (localStorage.getItem("cookieConsent") !== "true") {
-        consentBanner.style.display = "block";
-      } else {
-        consentBanner.style.display = "none";
-      }
-
-      acceptButton.addEventListener("click", function () {
-        localStorage.setItem("cookieConsent", "true");
-        consentBanner.style.display = "none";
+        acceptButton.addEventListener("click", function () {
+          localStorage.setItem("cookieConsent", "true");
+          consentBanner.style.display = "none";
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

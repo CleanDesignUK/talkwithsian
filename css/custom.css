@@ -110,6 +110,8 @@ body {
     color: #fff;
     font-size: 1.5rem;
   }
+
+  .footer  p {color:white !important;}
   
   /* Cookie Consent Banner */
   .cookie-consent-banner {
