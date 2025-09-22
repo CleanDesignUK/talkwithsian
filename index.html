@@ -70,6 +70,8 @@ content="Seeking therapy in Chester? Talk with a professional therapist providin
       crossorigin="anonymous"
     />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <link href="css/custom.css" rel="stylesheet" />
     <!-- Main custom CSS (shared) -->
     <link href="css/home.css" rel="stylesheet" />
@@ -126,6 +128,40 @@ content="Seeking therapy in Chester? Talk with a professional therapist providin
       gtag("js", new Date());
       gtag("config", "G-8H4XXWVZPZ");
     </script>
+
+ <!-- NEW: LocalBusiness JSON-LD with physical address for in-person therapy -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "additionalType": "https://schema.org/ProfessionalService",
+      "name": "Talk with Sian",
+      "image": "https://talkwithsian.com/images/logo-talk-with-sian.jpg",
+      "url": "https://talkwithsian.com/",
+      "telephone": "+44 7754 141453",
+      "email": "talkwithsian@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 Hazel Drive",
+        "addressLocality": "Penyffordd",
+        "addressRegion": "Flintshire",
+        "postalCode": "CH4 0NF",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {"@type":"Place","name":"Chester"},
+        {"@type":"Place","name":"Flintshire"},
+        {"@type":"Place","name":"Penyffordd"},
+        {"@type":"Place","name":"Buckley"},
+        {"@type":"Place","name":"Mold"},
+        {"@type":"Place","name":"Deeside"},
+        {"@type":"Place","name":"Wrexham"}
+      ],
+      "priceRange": "££",
+      "sameAs": []
+    }
+    </script>
+
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -228,6 +264,41 @@ content="Seeking therapy in Chester? Talk with a professional therapist providin
           Book Your Consultation with a Professional Therapist
         </a>
       </div>
+
+<!-- In-person Therapy Section -->
+<section class="inperson-section py-5 my-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- LEFT COLUMN: Image -->
+      <div class="col-lg-6">
+        <img
+          src="images/in-person-counselling-penyffordd.jpg"
+          alt="Private therapy room in Penyffordd"
+          class="img-fluid inperson-image"
+        />
+      </div>
+
+      <!-- RIGHT COLUMN: Content -->
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">In-person Therapy in Penyffordd</h2>
+        <p class="lead mb-3">
+          Prefer to meet face-to-face? You can now book an appointment at my private therapy room in Penyffordd, Flintshire.
+        </p>
+        <address class="mb-0">
+          <strong>Address</strong><br />
+          7 Hazel Drive, Penyffordd, Flintshire CH4 0NF
+        </address>
+
+        <div class="d-flex flex-wrap gap-3 mb-3">
+          <a class="btn btn-primary btn-lg" href="contact.html">Book Your Consultation</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       <!-- Navigation Cards -->
       <div class="container">
@@ -395,6 +466,7 @@ content="Seeking therapy in Chester? Talk with a professional therapist providin
       </div>
     </div>
     <!-- End .content-container -->
+   <!-- ======== FOOTER ======== -->
     <footer class="footer mt-auto">
       <div class="container">
         <div class="row">
@@ -407,23 +479,28 @@ content="Seeking therapy in Chester? Talk with a professional therapist providin
           </div>
           <div class="col-md-4 mb-4">
             <h5>Legal</h5>
-            <a href="cookie-policy.html">Cookie Policy</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="cookie-policy.html"
+              >Cookie Policy</a
+            >
+            <a href="privacy-policy.html"
+              >Privacy Policy</a
+            >
           </div>
-          <div class="col-md-4 mb-4">
-            <h5>Connect with Me</h5>
-            <p>Mobile: +44 7754 141453</p>
-            <p>
-              Email:
-              <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a>
-            </p>
-          </div>
+<div class="col-md-4 mb-4 text-md-start text-center">
+  <h5>Connect with Me</h5>
+  <p><i class="bi bi-telephone-fill me-2"></i>+44 7754 141453</p>
+  <p><i class="bi bi-envelope-fill me-2"></i>
+    <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a>
+  </p>
+  <p><i class="bi bi-geo-alt-fill me-2"></i>
+    7 Hazel Drive, Penyffordd, Flintshire CH4 0NF
+  </p>
+</div>
+
         </div>
         <div class="text-center p-3">
-          © 2024 Talk with Sian. Designed by
-          <a href="https://www.cleandesignuk.uk/" class="bold"
-            >Clean Design UK</a
-          >
+          © 2025 Talk with Sian. Designed by
+          <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
         </div>
       </div>
     </footer>

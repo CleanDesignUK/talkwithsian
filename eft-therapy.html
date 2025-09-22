@@ -46,7 +46,7 @@
     rel="stylesheet"
   />
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <!-- ==================== Custom Combined CSS ==================== -->
   <style>
     /* ========================================
@@ -113,6 +113,51 @@
       background-image:
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
+
+    /* Availability badge - matches site gradient buttons */
+.session-badge {
+  display: inline-block;
+  background: linear-gradient(45deg, #9370DB, #856798);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.info-card {
+  background-color: #f8f6ff;
+  border: 1px solid #e6e0f3;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+
+  margin: 0 auto; /* center card */
+  margin-bottom: 20px;
+}
+
+.info-card ul {
+  padding-left: 1.2rem;
+}
+
+.info-card .gradient-button {
+  border-radius: 50px;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.25rem;
+  width: 80%;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    text-align: center;
+  }
+  .info-card .gradient-button {
+    width: 100%;
+  }
+}
+
+
 
     /* ========================================
        Cookie Banner
@@ -507,6 +552,36 @@
       </div>
     </div>
 
+<div class="info-card mt-4">
+  <div class="row align-items-center text-center text-md-start">
+    <!-- LEFT: Session Types -->
+    <div class="col-md-6 mb-3 mb-md-0">
+      <h3 class="h5 text-purple mb-3">Session Types</h3>
+      <ul class="list-unstyled mb-0">
+        <li>💻 Online sessions via secure video</li>
+        <li>🏠 In-person sessions in Penyffordd, Flintshire</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT: Location + Button -->
+    <div class="col-md-6 d-flex flex-column align-items-center align-items-md-start">
+      <p class="fw-bold mb-1">In-person Location</p>
+      <p class="mb-3">7 Hazel Drive, Penyffordd, Flintshire CH4 0NF</p>
+      <a
+        class="gradient-button text-center"
+        href="https://www.google.com/maps/search/?api=1&query=7+Hazel+Drive,+Penyffordd,+Flintshire,+CH4+0NF"
+        target="_blank"
+        rel="noopener"
+      >
+        Open in Google Maps
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
     <!-- TESTIMONIALS -->
     <div class="testimonial-section">
       <h2 class="section-title">What Clients Say</h2>
@@ -566,37 +641,44 @@
     </div>
   </div>
   <!-- END CONTENT -->
-  <footer class="footer mt-auto">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>Quick Links</h5>
-          <a href="index.html">Home</a> |
-          <a href="about.html">About</a> |
-          <a href="services.html">Services</a> |
-          <a href="contact.html">Contact</a>
+  <!-- ======== FOOTER ======== -->
+    <footer class="footer mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Quick Links</h5>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Legal</h5>
+            <a href="cookie-policy.html"
+              >Cookie Policy</a
+            >
+            <a href="privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </div>
+<div class="col-md-4 mb-4 text-md-start text-center">
+  <h5>Connect with Me</h5>
+  <p><i class="bi bi-telephone-fill me-2"></i>+44 7754 141453</p>
+  <p><i class="bi bi-envelope-fill me-2"></i>
+    <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a>
+  </p>
+  <p><i class="bi bi-geo-alt-fill me-2"></i>
+    7 Hazel Drive, Penyffordd, Flintshire CH4 0NF
+  </p>
+</div>
+
         </div>
-        <div class="col-md-4 mb-4">
-          <h5>Legal</h5>
-          <a href="cookie-policy.html"
-            >Cookie Policy</a
-          >
-          <a href="privacy-policy.html" 
-            >Privacy Policy</a
-          >
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Connect with Us</h5>
-          <p>Mobile: +44 7754 141453</p>
-          <p>Email: <a href="mailto:talkwithsian@gmail.com">talkwithsian@gmail.com</a></p>
+        <div class="text-center p-3">
+          © 2025 Talk with Sian. Designed by
+          <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
         </div>
       </div>
-      <div class="text-center p-3">
-        © 2024 Talk with Sian. Designed by
-        <a href="https://www.cleandesignuk.uk/" class="bold">Clean Design UK</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <!-- ======== SCRIPTS ======== -->
   <!-- Bootstrap JS Bundle (for collapse, modals, etc.) -->

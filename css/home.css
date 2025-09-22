@@ -270,3 +270,54 @@ flex-direction: column;
 gap: 0.5rem;
 }
 }
+
+/* In-person Therapy Section (separate from hero) */
+.inperson-section {
+  background-color: #E6E6FA; /* Same lavender as nav cards for consistency */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: #000;
+}
+
+.inperson-section .section-title {
+  color: #7e57c2; /* Matches testimonial section heading */
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.inperson-image {
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  object-fit: cover;
+}
+
+.inperson-badge {
+  display: inline-block;
+  background: linear-gradient(45deg, #9370DB, #856798);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.inperson-section .btn-primary {
+  background: linear-gradient(45deg, #9370DB, #856798) !important;
+  border: none;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.inperson-section .btn-primary:hover {
+  background: linear-gradient(45deg, #856798, #4b0082);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .inperson-section {
+    text-align: center;
+  }
+  .inperson-section .d-flex.gap-3 {
+    justify-content: center;
+  }
+}
