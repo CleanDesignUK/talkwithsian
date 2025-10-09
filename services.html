@@ -282,6 +282,16 @@
         text-decoration: underline;
       }
 
+      /* Let the main content fill the vertical space so the footer still sits at the bottom */
+.content-container {
+  flex: 1 0 auto;
+}
+
+/* Actual gap above the footer */
+footer.footer {
+  margin-top: 3rem; /* tweak as you like */
+}
+
       /* ===================== RESPONSIVE ADJUSTMENTS ===================== */
       @media (max-width: 992px) {
         .service-card img {
@@ -487,7 +497,7 @@
         </div> <!-- .row -->
       </div> <!-- .container -->
 
-      <!-- Schedule Section -->
+      <!-- Schedule Section 
       <div class="container schedule-section-container" id="schedule">
         <div class="row">
           <div class="col-12 text-center">
@@ -497,9 +507,9 @@
             </p>
           </div>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Calendly Inline Widget -->
+      <!-- Calendly Inline Widget 
       <div
         class="calendly-inline-widget"
         data-url="https://calendly.com/talkwithsian/30min?primary_color=d400ff"
@@ -509,11 +519,11 @@
         type="text/javascript"
         src="https://assets.calendly.com/assets/external/widget.js"
         async>
-      </script>
-    </div> <!-- End .content-container -->
+      </script>--> 
+    </div>
 
   <!-- ======== FOOTER ======== -->
-    <footer class="footer mt-auto">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-4">
