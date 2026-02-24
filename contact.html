@@ -270,6 +270,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           if (response.ok) {
             responseElement.style.color = 'purple';
             responseElement.textContent = 'Success! Your message has been sent.';
+            window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ event: 'sian_form_success' });
             form.reset();
           } else {
             throw new Error('Form submission failed.');
