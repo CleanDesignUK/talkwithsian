@@ -81,6 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       rel="stylesheet"
     />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="css/custom.css" rel="stylesheet" />
 
     <!-- ======== Inline Custom CSS ======== -->
     <style>
@@ -200,7 +201,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         max-width: 800px;
         margin: 0 auto 2rem;
         line-height: 1.5;
+ color: #ffffff !important;
       }
+
 
       /* ===================== PRICING SECTION ===================== */
       .pricing-section {
@@ -365,7 +368,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -386,36 +390,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 id="servicesDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false">
+                aria-expanded="false"
+              >
                 Services
               </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <li><a class="dropdown-item" href="services.html">All My Services</a></li>
+                <li><a class="dropdown-item" href="services.html">All Services</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="eft-therapy.html">EFT Tapping</a></li>
                 <li><a class="dropdown-item" href="trauma-therapy.html">Trauma Therapy</a></li>
-                <!-- Renamed CBT to Person Centred Therapy in the menu -->
                 <li><a class="dropdown-item" href="person-centred-therapy.html">Person Centred Therapy</a></li>
+<li><a class="dropdown-item" href="reiki-therapy-chester.html">Reiki Therapy</a></li>
               </ul>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+<li class="nav-item nav-call-item">
+  <a class="navbar-call-btn" href="tel:+447754141453">
+    <i class="bi bi-telephone-fill"></i>
+    <span>Call 07754 141453</span>
+  </a>
+</li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- ======== COOKIE BANNER ======== -->
+    <!-- Cookie Banner -->
     <div id="cookieConsent" class="cookie-consent-banner">
       <div class="container d-flex align-items-center justify-content-between">
         <p class="mb-0">
-          I use cookies to improve your experience on my site. By continuing to
-          use my site, you accept my use of cookies.
+          I use cookies to improve your experience on my site. By continuing to use my site, you accept my use of cookies.
           <a href="cookie-policy.html">Learn more</a>.
         </p>
-        <button id="acceptCookies" class="btn-sian-outline">Accept</button>
+        <button id="acceptCookies" class="btn btn-primary">Accept</button>
       </div>
     </div>
 
@@ -465,6 +475,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a class="btn-sian-outline mt-auto" href="eft-therapy.html">Learn More</a>
             </div>
           </div>
+
+<!-- Service Card: Reiki -->
+<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+  <div class="service-card">
+
+    <img
+      src="images/eft-reiki-therapy-chester-3.jpg"
+      alt="Reiki therapy in Chester, Penyffordd and Flintshire"
+    />
+
+    <h3>Reiki in Chester & Flintshire</h3>
+
+    <p>
+      Looking for Reiki in Chester or Flintshire? I offer gentle,
+      personalised Reiki sessions from my private space in
+      <strong>Penyffordd</strong>, within easy reach of Chester and
+      surrounding areas. Reiki provides a calm, restorative space to
+      relax, slow down and support your overall sense of emotional
+      and physical wellbeing.
+    </p>
+
+    <a
+      class="btn-sian-outline mt-auto"
+      href="reiki-therapy-chester.html"
+      aria-label="Learn more about Reiki in Chester and Flintshire"
+    >
+      Explore Reiki in Chester & Flintshire
+    </a>
+
+  </div>
+</div>
 
           <!-- Service Card 2: Trauma Therapy -->
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
@@ -611,5 +652,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       });
     </script>
+
+<a
+  href="https://wa.me/447754141453?text=Hi%20Sian%2C%20I%27d%20like%20to%20ask%20about%20therapy."
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Message Sian on WhatsApp"
+>
+  <i class="bi bi-whatsapp"></i>
+</a>
   </body>
 </html>

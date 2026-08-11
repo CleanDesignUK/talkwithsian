@@ -88,6 +88,81 @@ body {
     padding-top: 100px; /* extra space for fixed navbar */
   }
   
+/* ==================================================
+   CONTACT BUTTONS
+   Navbar Call Button + Floating WhatsApp Button
+   ================================================== */
+
+/* Navbar Call Button */
+.nav-call-item {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.navbar-call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-color: #ffffff;
+  color: #7e57c2 !important;
+
+  padding: 11px 20px;
+  border-radius: 50px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+
+  box-shadow: 0 3px 10px rgba(75, 0, 130, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.navbar-call-btn i {
+  color: #7e57c2 !important;
+  font-size: 1rem;
+}
+
+.navbar-call-btn:hover {
+  background-color: #f4effa;
+  color: #6f42b5 !important;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 14px rgba(75, 0, 130, 0.22);
+}
+
+.navbar-call-btn:hover i {
+  color: #6f42b5 !important;
+}
+
+
+
+/* ==================================================
+   Mobile
+   ================================================== */
+
+@media (max-width: 991.98px) {
+
+  .nav-call-item {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .navbar-call-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
   /* Footer */
   .footer {
     background: linear-gradient(45deg, #96c, #856798);
@@ -195,4 +270,68 @@ body {
     }
   }
   
-  
+  /* ==================================================
+   Floating WhatsApp Button
+   ================================================== */
+
+.whatsapp-float {
+  position: fixed;
+
+  right: 24px;
+  bottom: 24px;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #25D366;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+
+  text-decoration: none;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+
+  z-index: 9999;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  color: #ffffff;
+
+  transform: translateY(-3px) scale(1.04);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float i {
+  line-height: 1;
+}
+
+/* ==================================================
+   Mobile
+   ================================================== */
+
+@media (max-width: 991.98px) {
+
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+
+    right: 16px;
+    bottom: 16px;
+
+    font-size: 27px;
+  }
+}
